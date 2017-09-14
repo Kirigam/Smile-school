@@ -1,0 +1,114 @@
+body {
+	background-color: rgb(63, 127, 226);
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+section.body {
+	width: 1000px;
+	height: 900px;
+	background-color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.6);
+}
+/*//////_NAV_BAR_/////*/
+nav {
+	height: 60px;
+	width: 100%;
+}
+nav li{
+	display: inline-block;
+	margin-top: 23px;
+}
+nav li a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+	margin-left: 20px;
+}
+nav .selected {
+	color: rgb(63, 127, 226);
+	border-bottom: solid rgb(63, 127, 226);
+	padding-bottom: 17px;
+}
+nav .fa-shopping-cart, nav .fa-search{
+	color: #fff;
+	background-color: rgb(0,0,0);
+	border-style: none;
+	height: 30px;
+	width: 30px;
+	border-radius: 20px;
+	margin-left: 70px;
+	outline: none;
+}
+nav .fa-search {
+	background-color: rgb(63, 127, 226);
+	margin-left: 5px;
+}
+.sl img{
+	width: 1000px;
+	height: 550px;
+}
+.logo {
+	font-family: "NautilusPompiliusRegular";
+	display: inline-block;
+	font-weight: bold;
+	color: rgb(63, 127, 226);
+	margin-left: 60px;
+	margin-right: 125px;
+}
+
+/*//////_HEADER_/////*/
+header {
+	height: 550px;
+}
+.message {
+	position: absolute;
+	font-size: 30px;
+	top: 150px;
+	color: #fff;
+	text-align: center;
+	width: 630px;
+	right: 185px;
+	left: 185px;
+}
+.slButtons {
+	position: absolute;
+	top: 250px;
+	left: 370px;
+}
+.slButton {
+	width: 100px;
+	height: 40px;
+	border: none;
+}
+.slButton:first-child {
+	color: #fff;
+	background-color: rgb(63, 127, 226);
+}
+.slButton:last-child {
+	color: rgb(63, 127, 226);
+	background-color: #fff;
+	margin-left: 20px;
+}
+
+/*/////_MAIN_////*/
+section.main {
+	width: 700px;
+	margin: 50px 150px;
+}
+.main button {
+	color: #fff;
+	background-color: rgb(63, 127, 226);
+	width: 80;
+	height: 30px;
+	border: none;
+	font-size: 12px;
+}
+.main aside {
+	float: right;
+}
+a {
+	color: rgb(63, 127, 226);
+	text-decoration: none;
+}
