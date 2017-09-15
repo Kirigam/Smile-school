@@ -3,7 +3,7 @@ body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
 }
-section.body {
+section.page {
 	width: 1000px;
 	height: 900px;
 	background-color: #fff;
@@ -12,6 +12,7 @@ section.body {
 	margin-top: 25px;
 	box-shadow: 0 0 50px rgba(0,0,0,0.6);
 }
+
 /*//////_NAV_BAR_/////*/
 nav {
 	height: 60px;
@@ -92,12 +93,12 @@ header {
 	margin-left: 20px;
 }
 
-/*/////_MAIN_////*/
-section.main {
+/*/////_BODY_SECTION_////*/
+section.body {
 	width: 700px;
 	margin: 50px 150px;
 }
-.main button {
+.body button {
 	color: #fff;
 	background-color: rgb(63, 127, 226);
 	width: 80;
@@ -105,7 +106,7 @@ section.main {
 	border: none;
 	font-size: 12px;
 }
-.main aside {
+.body aside {
 	float: right;
 }
 a {
