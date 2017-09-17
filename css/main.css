@@ -1,3 +1,6 @@
+html{
+	min-width: 1100px;
+}
 body{
 	padding: 40px;
 	margin: 0;
@@ -6,6 +9,7 @@ body{
 #allContent{
 	position: relative;
 	float: left;
+	box-shadow: 0px 30px 20px 3px black;
 	width: 1000px;
 	height: auto;
 	left: 50%;
@@ -52,22 +56,56 @@ header{
 	border-radius: 100%; 
 }
 #search{
-	background-color: #008ffc;;
+	background-color: #008ffc;
 }
 #basket{
 	background-color: black;
 }
-#sliderText{
+#content{
 	position: relative;
 	float: left;
-	width: 100%;
+	width: 80%;
+	padding: 40px 10% 30px 10%;
+}
+#content #textContent{
+	position: relative;
+	float: left;
+	width: 50%;
+	color: grey;
+	font-size: 14px;
+	line-height: 24px;
+}
+#content #textContent>p>span{
+	color: #008ffc;
+}
+#content #textContent h2{
+	color: black;
+	font-weight: 500;
+}
+#content>img{
+	position: relative;
+	float: right;
+	width: 45%;
+}
+.readMore{
+	width: 90px;
+	height: 35px;
+	line-height: 35px;
+	box-shadow: 0px 5px 5px grey;
+	background-color: #008ffc;
+	color: white;
+	padding: 0 5px;
+	font-size: 16px;
+	font-weight: 500;
 	text-align: center;
 }
-#sliderText h1{
-	margin: 10px 0 10px 0;
+.readMore:hover{
+    background-color: #0075cf;
 }
-
-
+.readMore:active{
+    background-color: #0062ad;
+    box-shadow: none;
+}
 
 
 
