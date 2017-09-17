@@ -224,3 +224,144 @@ h2 {
 .about a i {
 	font-size: 12px;
 }
+
+@media (max-width: 240px) {
+  .container {
+    width: 99%;
+  }
+  .col-img {
+	  text-align: center;
+  }
+}
+@media (max-width: 360px) {
+
+	body {
+		font-size: 12px;
+	}
+}
+@media (max-width: 480px) {
+	.col-img img{
+		width: 95%;
+	}
+}
+
+@media (min-width: 240px) and (max-width: 767px){
+	.menuBtn {
+	right: 50px;
+	}
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+	.logo {
+		width: 25%;
+	}
+	.buttons {
+		display: none;
+	}
+	.slider div h1 {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+   .col-05 {
+	width: 100%;
+  }	
+	.col-img {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+
+	.logo {
+		width: 15%;
+	}
+  .buttons {
+	  width: 20%;
+  }
+	.menuBtn {
+	right: 165px;
+	}
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
+  
+	.wrapper {
+		margin: 0 auto;
+		width: 95%;
+		/* border: 1px dashed black; */
+	}
+  .menu {
+	 display: none;
+  }
+	.buttons {
+		float: right;
+	}
+	.menuBtn {
+	background-color: transparent;
+	padding: 0;
+	position: absolute;
+	top: 105px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+}
+	.menuBtn:focus {
+		outline: none;
+	}
+	.menuBtn span{
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #000;
+	}
+	.menuBtn span:before {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 100%;
+		height: 3px;
+		top: -15px;
+		background-color: #000;
+		transition: .3s;
+	}
+	.menuBtn span:after {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 100%;
+		height: 3px;
+		top: 15px;
+		background-color: #000;
+		transition: .3s;
+	}
+	.menuBtn.toggle span {
+		background: transparent;
+	}
+	.menuBtn.toggle span:before {
+		top: 0;
+		transform: rotate(45deg);
+	}
+	.menuBtn.toggle span:after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+}
+@media (min-width: 1200px) {
+	.menuBtn {
+		display: none;
+	}
+}
