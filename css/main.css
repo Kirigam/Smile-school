@@ -48,10 +48,14 @@ header{
 	color: #008ffc;
 }
 #basket, #search{
+	color: white;
+	font-size: 14px;
+	line-height: 25px;
+	padding: 0 5px 0 5px;
 	position: relative;
 	float: right;
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 15px;
 	margin: 20px 5px 20px 0;
 	border-radius: 100%; 
 }
