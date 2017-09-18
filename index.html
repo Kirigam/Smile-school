@@ -10,7 +10,6 @@
     <title>Proj</title>
 	
 	<link rel="stylesheet" href="styles.css" media="all">
-	<link rel="stylesheet" href="css/media.css" media="all">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="plugins/slick/slick.css">
 	<link rel="stylesheet" href="plugins/slick/slick-theme.css">
@@ -42,6 +41,14 @@
 					</div>
 					<div class="clear"></div>
 				</div>
+				<ul class="m_menu">
+					<li class="menu_el"><a href="#">main</a></li>
+					<li class="menu_el"><a href="#">about</a></li>
+					<li class="menu_el"><a href="#">services</a></li>
+					<li class="menu_el"><a href="#">portfolio</a></li>
+					<li class="menu_el"><a href="#">blog</a></li>
+					<li class="menu_el"><a href="#">contact</a></li>
+				</ul>
 			</div>
 			<div class="single-slide slider">  <!-- Slide-wrapper -->
 				<div class="slide slide1">
@@ -101,6 +108,31 @@
 		
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- JQuery library -->
+	<script>
+		$(document).ready(function(){
+			$('.menuBtn, .menu').click(function(){
+			  $('.m_menu').toggleClass('active');
+			  $(".menuBtn").toggleClass("toggle");
+			  $(".m_menu").toggleClass("down");
+			})
+			$(document).click(function(event) {
+				if ($(event.target).closest(".menuBtn").length ) return;
+				$('.m_menu').removeClass('active');
+				$(".menuBtn").removeClass("toggle");
+				$(".m_menu").removeClass("down");
+				event.stopPropagation();
+			});
+			
+			$('a[href*=#]').bind("click", function(e){
+				var anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top
+			}, 1000);
+			e.preventDefault();
+			});
+			return false;
+		});
+	</script>
 	<script src="plugins/slick/slick.js"></script>
 	<script src="plugins/slick/carrousel_settings.js"></script>
 </body>
