@@ -1,53 +1,83 @@
 html{
-	min-width: 1100px;
+	/*min-width: 1100px;*/
 }
 body{
 	padding: 40px;
 	margin: 0;
 	background-color: #008ffc;
 }
+.left{
+	float: left !important;
+}
+.right{
+	float: right;
+}
+@media (min-width: 450px){
+	.left-noMob{
+		float: left;
+	}
+	.right-noMob{
+		float: right;
+	}
+}
+@media (max-width: 450px){
+	
+}
 #allContent{
 	position: relative;
 	float: left;
-	box-shadow: 0px 30px 20px 3px black;
-	width: 1000px;
 	height: auto;
-	left: 50%;
-	margin-left: -500px;
 	background-color: white;
+	box-shadow: 0px 30px 20px 3px black;
+
+}
+@media (max-width: 450px){
+	#allContent{
+		box-shadow: none;
+	}
+	body{
+		padding: 0;
+	}
+}
+@media (min-width: 1100px){
+	#allContent{
+		width: 1000px;	
+		left: 50%;
+		margin-left: -500px;
+	}
 }
 header{
 	position: relative;
 	float: left;
-	padding: 0 100px 0 100px;
-	width: 800px;
+	padding: 0 20px 0 20px;
 	height: 60px;
 }
 #logo{
 	position: relative;
+	float: left;
+	height: 60px;
 	padding: 10px;
 	float: left;
 }
 #logo>img{
-	height: 40px
+	height: 40px;
 }
 #main{
 	position: relative;
-	float: right;
-	margin-right: 100px;
+	float: left;
 }
-#main>.mainItem{
+.mainItem{
 	position: relative;
 	float: left;
 	line-height: 56px;
 	font-size: 12px;
 	margin: 2px 10px 0 10px;
 }
-#main>.itemActive{
+#main .itemActive{
 	border-bottom: 2px solid #008ffc;
 	color: #008ffc;
 }
-#basket, #search{
+.basket, .search{
 	color: white;
 	font-size: 14px;
 	line-height: 25px;
@@ -55,27 +85,134 @@ header{
 	position: relative;
 	float: right;
 	height: 25px;
-	width: 15px;
-	margin: 20px 5px 20px 0;
+	width: 25px;
+	margin: 17.5px 5px 17.5px 0;
 	border-radius: 100%; 
 }
-#search{
+.search{
 	background-color: #008ffc;
 }
-#basket{
+.basket{
 	background-color: black;
+}
+.bars{
+	position: relative;
+	float: right;
+	line-height: 60px;
+	font-size: 30px;
+	cursor: pointer;
+}
+#manyBars{
+	position: absolute;
+	display: none;
+	top: 60px;
+	right: 0;
+	background-color: #ededed;
+	z-index: 10;
+}
+.itemBar{
+	border-bottom: 2px solid grey;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.itemBar:hover{
+	color: #007deb;
+	border-color: #007deb;
+}
+#manyBars > ul{
+	line-height: 30px;
+	text-align: center;
+	list-style-type: none;
+}
+@media (min-width: 730px){
+	.big{
+		display: block;
+	}
+	.small{
+		display: none;
+	}
+}
+@media (max-width: 730px){
+	.big{
+		display: none;
+	}
+	.small{
+		display: block;
+	}
+}
+.button{
+    position: relative;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    box-shadow: 2px 1px 2px grey;
+    background-color: white;
+    color: #008ffc;
+    border: none;
+    margin: 10px;
+}
+.carBut{
+    margin-top: 40px;
+}
+.button:hover{
+    background-color: #0075cf;
+    color: white;
+}
+.button:active{
+    background-color: #0062ad;
+    color: white;
+    box-shadow: none;
+}
+@media(min-width: 730px){
+    #sliderText{
+        position: absolute;
+        top: 70px;
+        color: white;
+    }
+}
+@media(max-width: 730px){
+    #sliderText{
+        position: relative;
+        color: grey;
+    }
+    .button{
+        background-color: #ededed;
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .cntr-med{
+        float: left !important;
+        left: 50% !important;
+        margin-left: -75px !important;   
+    }
+}
+@media(max-width: 450px){
+    .button{
+        background-color: #ededed;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .cntr-mob{
+        float: left !important;
+        left: 50% !important;
+        margin-left: -100px !important;   
+    }
 }
 #content{
 	position: relative;
 	float: left;
-	width: 80%;
-	padding: 40px 10% 30px 10%;
+	width: 100%;
+	padding: 0 10% 30px 10%;
 }
 #content #textContent{
 	position: relative;
 	float: left;
-	width: 50%;
 	color: grey;
+	padding-top: 40px; 
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -86,29 +223,20 @@ header{
 	color: black;
 	font-weight: 500;
 }
-#content>img{
+#content img{
 	position: relative;
+	padding-top: 40px;
 	float: right;
-	width: 45%;
+	width: 90%;
 }
 .readMore{
-	width: 90px;
-	height: 35px;
-	line-height: 35px;
 	box-shadow: 0px 5px 5px grey;
-	background-color: #008ffc;
-	color: white;
-	padding: 0 5px;
-	font-size: 16px;
-	font-weight: 500;
-	text-align: center;
+	margin: 10px 0 10px 0;
 }
-.readMore:hover{
-    background-color: #0075cf;
-}
-.readMore:active{
-    background-color: #0062ad;
-    box-shadow: none;
+@media (max-width: 730px){
+	#content img{
+		width: 100%;
+	}
 }
 
 

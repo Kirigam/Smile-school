@@ -8,22 +8,55 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/carusel.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div id="allContent">
-		<header>
-			<div id="logo"><img src="image/logo.jpg"></div>
-			<div id="search" class="fa fa-search"></div>
-			<div id="basket" class="fa fa-shopping-cart"></div>
-			<div id="main">
-				<div class="mainItem itemActive">MAIN</div>
-				<div class="mainItem">ABOUT</div>
-				<div class="mainItem">SERVICE</div>
-				<div class="mainItem">PORTFOLIO</div>
-				<div class="mainItem">BLOG</div>
-				<div class="mainItem">CONTACT</div>
+	<div id="allContent" class="container">
+		<header class="container">
+			<div class="container">
+				<div class="col-2-12">
+					<div id="logo">
+						<img src="image/logo.jpg">
+					</div>
+				</div>
+				<div id="main" class="col-10-12">
+					<div class="big">
+						<div class="col-9-12">
+							<div class="mainItem itemActive">MAIN</div>
+							<div class="mainItem">ABOUT</div>
+							<div class="mainItem">SERVICE</div>
+							<div class="mainItem">PORTFOLIO</div>
+							<div class="mainItem">BLOG</div>
+							<div class="mainItem">CONTACT</div>
+						</div>
+						<div class="col-3-12">
+							<div class="fa fa-search search"></div>
+							<div class="fa fa-shopping-cart basket"></div>
+						</div>
+					</div>
+					<div class="small">
+						<div class="fa fa-bars bars" onclick="bar()"></div>
+					</div>
+					
+				</div>	
+			</div>
+			<div id="manyBars" class="container">
+				<div class="itemBar">MAIN</div>
+				<div class="itemBar">ABOUT</div>
+				<div class="itemBar">SERVICE</div>
+				<div class="itemBar">PORTFOLIO</div>
+				<div class="itemBar">BLOG</div>
+				<div class="itemBar">CONTACT</div>
+				<div class="container">
+					<div class="col-6-12">
+						<div class="fa fa-search search right"></div>
+					</div>
+					<div class="col-6-12">
+						<div class="fa fa-shopping-cart basket left"></div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<div id="carusel">
@@ -63,26 +96,33 @@
 		<div id=sliderText>
 			<h1>if something is not happening for you, it doesn't</h1>
 			<h1>mean it's never goin to happen</h1>
-			<div id="see" class="button">SEE MORE</div>
-			<div id="more" class="button">GET NOW</div>
-		</div>
-		<div id="content">
-			<div id="textContent">
-				<h2>Who We Are & What We Do</h2>
-				<p>asfnjlaskhdfnjvcbnisfhgjslhiusrhtuvilsngadsfdbasdfdasdafdasdaasd
-				kjsgvlskjflghuvrlhgsjlfdghlsriuysi;omvu;v[pwoasfdgvdsafdasdaasd
-				<span>asdlkjgheriltmao;kljgnjer;vujta'prgvhtjgkasdffbvcasaaflfdasdaasd</span></p>
-				<p>asfnjlaskhdfnjvcbnisfhgjslhiusrhtuvilsngadsfdbasdfdasdafdasdaasd
-				kjsgvlskjflghuvrlhgsjlfdghlsriuysi;omvu;v[pwoasfdgvdsafdasdaasd
-				asdlkjgheriltmao;kljgnjer;vujta'prgvhtjgkasdffbvcasaaflfdasdaasd</p>
-				<div class=readMore>
-					<span>read more ›</span>
+			<div class="container">
+				<div class="col-6-12 med-6-12 mob-con">
+					<button id="see" class="button carBut right-noMob cntr-mob">SEE MORE</button>
+				</div>
+				<div class="col-6-12 med-6-12 mob-con">
+					<button id="more" class="button carBut left-noMob cntr-mob">GET NOW</button>
 				</div>
 			</div>
-			<img src="image/comp.jpg">
+		</div>
+		<div id="content" class="container">
+			<div id="textContent" class="col-6-12 med-con mob-con">
+				<h2>Who We Are & What We Do</h2>
+				<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasd<span>asdlk jgherilt mao;kljgnjer ;vujta'prgvhtjg kasdff bvcasaafl fdas daasd</span></p>
+				<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao;kljgnjer ;vujta'prgvhtjg kasdff bvcasaafl fdas daasd</p>
+				<div class="container">
+					<button class="readMore button cntr-mob cntr-med">
+						READ MORE ›
+					</button>	
+				</div>
+			</div>
+			<div class="col-6-12 med-con mob-con right">
+				<img src="image/comp.jpg">
+			</div>
 		</div>
 	</div>
 </body>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js'></script>
 	<script type="text/javascript" src="main.js"></script>
