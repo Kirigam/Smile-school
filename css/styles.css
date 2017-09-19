@@ -84,13 +84,13 @@ body {
 .col {
 	display: inline-block;
 }
-.col-038 {
+.col-38-percent {
 	width: 38%;
 }
-.col-046 {
+.col-46-percent {
 	width: 46%;
 }
-.col-016 {
+.col-16-percent {
 	width: 15%;
 	text-align: right;
 }
@@ -177,19 +177,19 @@ body {
 	background: #2988e2;
 }
 .slide1 {
-	background: url("images/nature.jpg");
+	background: url("../images/nature.jpg");
 }
 .slide2 {
-	background: url("images/nature2.jpg");
+	background: url("../images/nature2.jpg");
 }
 .slide3 {
-	background: url("images/nature3.jpg");
+	background: url("../images/nature3.jpg");
 }
 .slide4 {
-	background: url("images/nature.jpg");
+	background: url("../images/nature.jpg");
 }
 .slide5 {
-	background: url("images/nature2.jpg");
+	background: url("../images/nature2.jpg");
 }
 .slide {
 	background-size: cover;
@@ -204,23 +204,23 @@ h2 {
 	font-weight: bold;
 	margin-bottom: 25px;
 }
-.col-05 {
+.col-49-percent {
 	display: inline-block;
 	width: 49%;
 	vertical-align: top;
 	line-height: 100%;
 }
-.col-05 p {
+.col-49-percent p {
 	margin-bottom: 30px;
 }
-.col-05 span a {
+.col-49-percent span a {
 	display: block;
 	font-size: 18px;
 	color: #ffffff;
 	background: #2988e2;
 	padding: 10px 15px;
 }
-.col-05 span {
+.col-49-percent span {
 	display: inline-block;
 }
 .about p a {
@@ -265,9 +265,6 @@ h2 {
 	.container {
 		width: 90%;
 	}
-	.logo {
-		width: 25%;
-	}
 	.buttons {
 		display: none;
 	}
@@ -280,7 +277,7 @@ h2 {
 	.container {
 		width: 90%;
 	}
-	.col-05 {
+	.col-49-percent {
 		width: 100%;
 	}	
 	.col-img {
