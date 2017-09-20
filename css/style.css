@@ -1,16 +1,32 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
 body {
 	background-color: rgb(63, 127, 226);
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
-}
-section.page {
-	width: 1000px;
-	height: 900px;
-	background-color: #fff;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	box-shadow: 0 0 50px rgba(0,0,0,0.6);
 }
 
 /*//////_NAV_BAR_/////*/
@@ -18,7 +34,7 @@ nav {
 	height: 60px;
 	width: 100%;
 }
-nav li{
+nav ul li{
 	display: inline-block;
 	margin-top: 23px;
 }
@@ -29,8 +45,8 @@ nav li a {
 }
 nav .selected {
 	color: rgb(63, 127, 226);
-	border-bottom: solid rgb(63, 127, 226);
-	padding-bottom: 17px;
+	border-bottom: solid 8px rgb(63, 127, 226);
+	padding-bottom: 16px;
 }
 nav .fa-shopping-cart, nav .fa-search{
 	color: #fff;
@@ -39,44 +55,43 @@ nav .fa-shopping-cart, nav .fa-search{
 	height: 30px;
 	width: 30px;
 	border-radius: 20px;
-	margin-left: 70px;
 	outline: none;
+	margin-top: 16px;
 }
 nav .fa-search {
 	background-color: rgb(63, 127, 226);
 	margin-left: 5px;
 }
-.sl img{
-	width: 1000px;
-	height: 550px;
-}
+
 .logo {
 	font-family: "NautilusPompiliusRegular";
 	display: inline-block;
 	font-weight: bold;
 	color: rgb(63, 127, 226);
-	margin-left: 60px;
-	margin-right: 125px;
+	margin-top: 24px;
+}
+.menuBtn {
+	
 }
 
 /*//////_HEADER_/////*/
 header {
-	height: 550px;
+	height: 500px;
 }
 .message {
 	position: absolute;
 	font-size: 30px;
-	top: 150px;
+	top: 20%;
 	color: #fff;
 	text-align: center;
-	width: 630px;
-	right: 185px;
-	left: 185px;
+	width: 63%;
+	right: 18,5%;
+	left: 18,5%;
 }
 .slButtons {
 	position: absolute;
-	top: 250px;
-	left: 370px;
+	top: 45%;
+	left: 36%;
 }
 .slButton {
 	width: 100px;
@@ -94,10 +109,6 @@ header {
 }
 
 /*/////_BODY_SECTION_////*/
-section.body {
-	width: 700px;
-	margin: 50px 150px;
-}
 .body button {
 	color: #fff;
 	background-color: rgb(63, 127, 226);
@@ -105,11 +116,124 @@ section.body {
 	height: 30px;
 	border: none;
 	font-size: 12px;
-}
-.body aside {
-	float: right;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 a {
 	color: rgb(63, 127, 226);
 	text-decoration: none;
 }
+button {
+	cursor: pointer;
+}
+.body h1 {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+/*////////_GRID_/////////*/
+.container {
+	margin: 25px auto;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 50px rgba(0,0,0,0.6);
+	background-color: #fff;
+	box-shadow: 0 0 50px rgba(0,0,0,0.6);
+	width: 1200px;
+}
+.row {
+	width: 73%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.to-left {
+	float: left;
+}
+.to-right {
+	float: right;
+}
+.col-8-1 {
+	width: 12,5%;
+}
+.col-8-2 {
+	width: 25%;
+}
+.col-8-3 {
+	width: 37,5%;
+}
+.col-8-4 {
+	width: 50%;
+}
+.col-8-5 {
+	width: 62,5%;
+}
+.col-8-6 {
+ 	width: 75%;
+}
+.col-8-7 {
+ 	width: 87,5%;
+}
+.col-8-8 {
+ 	width: 100%;
+}
+[class*='col-'] {
+ 	position: relative;
+  	min-height: 1px;
+  	float: left;
+}
+[class*='col-']:last-of-type {
+ 	padding-right: 0;
+}
+@media (max-width: 240px) {
+	.container {
+		width: 99%;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.container {
+   	 	width: 90%;
+  	}
+  	.hidden-sm {
+  		display: none !important;
+  	}
+  	header {
+  		height: 300px;
+  	}
+  		
+}
+
+@media (max-width: 992px) {
+	.container {
+    	width: 90%;
+  	}
+  	.hidden-md {
+  		display: none !important;
+  	}
+  	.col-8-4 {
+  		width: 100%;
+  	}
+  	header {
+  		height: 350px;
+  	}
+}
+@media (max-width: 1200px) {
+	.container {
+		width: 90%;
+	}
+  	.hidden-lg {
+  		display: none !important;
+  	}
+  	header {
+  		height: 400px;
+  	}
+ }

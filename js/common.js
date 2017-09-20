@@ -1,12 +1,12 @@
  $(document).ready(function(){
 
- $('.sl').slick({	
- 	autoplay: true,
- 	autoplaySpeed: 3000,
- 	cssEase: 'ease-in',
- 	speed: 600,
- 	dots: true,
- 	arrows: false,
- 	fade: true,
-  });
+ 	$('.sl').slick({
+ 		autoplay: true,
+ 		cssEase: 'ease-in',
+        speed: 600,
+        dots: true,
+        arrows: false,
+        autoplaySpeed: 3000,
+        fade: true
+  	});
  });

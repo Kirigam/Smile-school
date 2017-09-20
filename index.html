@@ -10,20 +10,26 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 </head>
 <body>
-	<section class="page">
-		<nav>
-			<h1 class="logo">ThemePie</h1>
-			<li><a href="#" class="selected">MAIN</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">SERVICES</a></li>
-			<li><a href="#">PORTFOLIO</a></li>
-			<li><a href="#">BLOG</a></li>
-			<li><a href="#">CONTACT</a></li>
-			<button class="fa fa-shopping-cart"></button>
-			<button class="fa fa-search"></button>
+	<section class="container">
+		<nav class="row">
+			<h1 class="col-8-2 col-8-2-lg col-8-2-md col-8-2-sm logo">ThemePie</h1>
+			<ul class="col-8-5 col-8-5-lg col-8-5-md col-8-5-sm hidden-md hidden-sm hidden-lg">
+				<li><a href="#" class="selected">MAIN</a></li>
+				<li><a href="#" >ABOUT</a></li>
+				<li><a href="#"	>SERVICES</a></li>
+				<li><a href="#" >PORTFOLIO</a></li>
+				<li><a href="#" >BLOG</a></li>
+				<li><a href="#" ">CONTACT</a></li>
+			</ul>
+			<div class="to-right hidden-md hidden-sm hidden-lg">
+				<button class="fa fa-shopping-cart"></button>
+				<button class="fa fa-search"></button>
+			</div>
+			<!--<a class="fa fa-bars to-right menuBtn" href="#"></a>-->
 		</nav>
 		<header class="sl">
 			<div class="sl_slide"><img src="img/sl1.jpg">
+				<div class="row hidden-md hidden-sm">
 				<span class="message">
 					if something is not happening for you it doesn't mean 
 					It's never going to happen
@@ -32,8 +38,10 @@
 					<button class="slButton">SEE MORE</button>
 					<button class="slButton">GET NOW</button>
 				</span>
+				</div>
 			</div>
 		  	<div class="sl_slide"><img src="img/sl2.jpg">
+		  		<div class="row hidden-sm">
 		  		<span class="message">
 					if something is not happening for you it doesn't mean 
 					It's never going to happen
@@ -42,25 +50,22 @@
 					<button class="slButton">SEE MORE</button>
 					<button class="slButton">GET NOW</button>
 				</span>
-		  	</div>
-		  	<div class="sl_slide"><img src="img/sl3.jpg">
-		  		<span class="message">
-					if something is not happening for you it doesn't mean 
-					It's never going to happen
-				</span>
-				<span class="slButtons">
-					<button class="slButton">SEE MORE</button>
-					<button class="slButton">GET NOW</button>
-				</span>
+				</div>
 		  	</div>
 		</header>
-		<section class="body">
-			<h1>Who We Are & What We Do</h1>
-			<aside><img src="img/device.jpg"></aside>
-			<p>Lorem ipsum dolor sit amet. Quaerat voluptatem sequi nesciunt, neque porro quisquam est, qui ratione voluptatem sequi. Ea commodi autem quibusdam et molestiae non recusandae <a href="#">soluta nobis</a></p>
-			<p>Lorem ipsum dolor sit amet. Sed ut labore et molestiae non provident, similique sunt. Ullam corporis suscipit laboriosam, nisi ut labore.</p>
-			<button>SEE MORE </button>
+		<section class="row body">
+		<h1>Who We Are & What We Do</h1>
+			<div class="col-8-4">
+				<p>Lorem ipsum dolor sit amet. Quaerat voluptatem sequi nesciunt, neque porro quisquam est, qui ratione voluptatem sequi. Ea commodi autem quibusdam et molestiae non recusandae <a href="#">soluta nobis</a></p>
+				<p>Lorem ipsum dolor sit amet. Sed ut labore et molestiae non provident, similique sunt. Ullam corporis suscipit laboriosam, nisi ut labore.</p>
+				<button>SEE MORE </button>
+			</div>
+			<div class="col-8-4">
+				<img src="img/device.jpg" class="to-right">
+			</div>
 		</section>
+		<footer >
+		</footer>
 	</section>
 
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
