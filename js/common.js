@@ -9,4 +9,9 @@
         autoplaySpeed: 3000,
         fade: true
   	});
+
+  	var buton = document.getElementsByClassName('menuBtn')[0];
+  	buton.onclick = () => {
+  		document.getElementsByClassName('mobileMenu')[0].style.visibility = 'visible';
+  	}
  });

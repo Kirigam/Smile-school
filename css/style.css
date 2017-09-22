@@ -68,10 +68,30 @@ nav .fa-search {
 	display: inline-block;
 	font-weight: bold;
 	color: rgb(63, 127, 226);
-	margin-top: 24px;
+	margin-top: 22px;
+	font-size: 25px;
 }
 .menuBtn {
-	
+	visibility: hidden;
+	margin-top: 15px;
+}
+.mobileMenu {
+	visibility: hidden;
+	position: absolute;
+	right: 5%;
+	top: 85px;
+	background-color: #807E86;
+	z-index: 1;
+	padding-bottom: 15px;
+	width: 30%;
+}
+.mobileMenu li { 
+	display: block; 
+	text-align: center;
+}
+.mobileMenu li a { color: #fff; }
+.mobileMenu li a:hover {
+	border-bottom: solid 4px rgb(63, 127, 226);
 }
 
 /*//////_HEADER_/////*/
@@ -196,7 +216,6 @@ button {
 	.container {
 		width: 99%;
 	}
-
 }
 
 @media (max-width: 768px) {
@@ -209,7 +228,9 @@ button {
   	header {
   		height: 300px;
   	}
-  		
+  	.mobileMenu {
+		width: 50%;
+	}
 }
 
 @media (max-width: 992px) {
@@ -235,5 +256,8 @@ button {
   	}
   	header {
   		height: 400px;
+  	}
+  	.menuBtn {
+  		visibility: visible;
   	}
  }
