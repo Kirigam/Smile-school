@@ -65,6 +65,9 @@ button {
   display: inline-block;
   float: left;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 body {
   .blue_background;
   color: #898989;
@@ -336,14 +339,11 @@ h2 {
 }
 .col-49-percent {
   display: inline-block;
-  width: 49%;
+  width: 49.5%;
   vertical-align: top;
   line-height: 100%;
   @media (max-width: 992px) {
     width: 100%;
-  }
-  p {
-    margin-bottom: 30px;
   }
   span {
     display: inline-block;
@@ -355,6 +355,9 @@ h2 {
       padding: 10px 15px;
     }
   }
+}
+.about-text p {
+  margin: 0 30px 30px 0;
 }
 .col-img {
   @media (max-width: 992px) {
@@ -414,22 +417,53 @@ h2 {
   }
 }
 #advantages {
+  font-size: 14px;
   background: #252525;
   .advantages_list {
-    padding: 80px 60px 40px 0;
+    div {
+      padding: 84px 0 35px 27%;
+    }
     h2 {
       margin: 0;
       color: #fff;
     }
     h6 {
-      margin:5px 0 25px 0;
+      margin:12px 0 15px 0;
+    }
+    p {
+      margin-bottom: 20px;
+      line-height: 16px;
+      max-width: 85%;
+    }
+    span {
+      a {
+        i {
+          font-size: 12px;
+        }
+      }
     }
     ul {
       li {
+        line-height: 24px;
         &:last-child {
           margin-bottom: 25px;
         }
+        &:before {
+          display: inline-block;
+          content: '';
+          margin-right: 10px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: @blue;
+        }
       }
+    }
+  }
+  .advantages_photo {
+    float: right;
+    img {
+      width: 100%;
     }
   }
 }
@@ -446,11 +480,23 @@ h2 {
 }
 .col-33-percent {
   display: inline-block;
-  padding-bottom: 70px;
-  width: 33.33%;
+  width: 30%;
+  margin: 0 1.66666% 2.7777%;
   float: left;
-  text-align: center;
   .pointer;
+
+  h6 {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  p {
+    padding: 0 10px;
+  }
+
+}
+.feature {
+  padding-bottom: 70px;
+  text-align: center;
   &:hover span i {
     background: @blue;
     color: #eeeeef;
@@ -470,11 +516,148 @@ h2 {
       border: 2px solid @blue;
     }
   }
-  h6 {
-    margin: 20px 0;
+}
+#portfolio {
+  padding: 70px 0;
+  h4 {
+    font-size: 14px;
   }
-  p {
-    padding: 0 10px;
+  h2, ul {
+    text-align: center;
   }
-
+  ul {
+    margin:0 auto 55px;
+    display: block;
+    li {
+      display: inline-block;
+      margin: -2px;
+      border-bottom: 2px solid #eeeeef;
+      padding-right: 20px;
+      a {
+        display: block;
+        line-height: 45px;
+        font-size: 13px;
+        .uppercase;
+        &:hover {
+          border-bottom: 2px solid @blue;
+          margin-bottom: -2px;
+          color: @blue;
+        }
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+.item {
+  position: relative;
+  background: #f1f0f3;
+  h5 {
+    font-weight: bold;
+    color: #000000;
+  }
+  span {
+    i {
+      color: #000000;
+    }
+  }
+  &:hover .sub-img{
+    background: @blue;
+    color: #ffffff;
+  }
+  &:hover a {
+    background: @blue;
+  }
+  &:hover a img{
+    opacity: .7;
+  }
+  &:hover:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 70px;
+    height: 2px;
+    top: 110px;
+    left: 95px;
+    transform: rotate(-90deg);
+    z-index: 100;
+    background: #ffffff;
+    opacity: .6;
+  }
+  &:hover:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 70px;
+    height: 2px;
+    top: 110px;
+    left: 95px;
+    z-index: 100;
+    background: #ffffff;
+    opacity: .6;
+  }
+  &:hover .sub-img h5,
+  &:hover .sub-img i {
+    color: #fff;
+  }
+  a {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .activity {
+    text-align: right;
+  }
+}
+.sub-img {
+  height: 50px;
+  vertical-align: middle;
+  margin-top: -3px;
+  div {
+    line-height: 50px;
+    &:first-child {
+      line-height: 25px;
+    }
+  }
+}
+.col-65-percent {
+  width: 64%;
+  display: inline-block;
+  vertical-align: top;
+}
+.col-35-percent {
+  width: 34%;
+  display: inline-block;
+  vertical-align: top;
+}
+#banner {
+  width: 100%;
+  background: url("../images/street.jpg");
+  background-size: cover;
+  padding: 100px 0;
+  color: #ffffff;
+}
+.for_end {
+  width: 40%;
+  margin: 0 auto;
+  background: #000000;
+  padding: 30px 0;
+  text-align: center;
+  opacity: .7;
+  h2 {
+    color: inherit;
+    .uppercase;
+  }
+  a {
+    display: inline-block;
+    margin-top: 30px;
+    .uppercase;
+    color: @blue;
+    padding: 0 15px;
+    &:first-of-type {
+      border-right: 2px solid @blue;
+    }
+  }
 }
