@@ -3,12 +3,32 @@ html{
 	min-width: 220px;
 }
 body{
+	margin: 0;
+	// overflow: hidden;
+	
+}
+.greyLineCont{
 	padding: 40px;
 	margin: 0;
 	background-color: #008ffc;
 	@media @mobile{
 		padding: 0;
 	}
+	overflow: hidden;
+
+}
+#greyLine{
+	position: absolute;
+	top: 1900px;
+	// right: 0;
+	// bottom: 0;
+	// left: 0;
+	float: left;
+	width: 400%;
+	height: 1500px;
+	left: -100%;
+	background-color: #3b3b3b;
+	transform: rotate(30deg);
 }
 #allContent{
 	position: relative;
@@ -16,10 +36,6 @@ body{
 	height: auto;
 	background-color: white;
 	box-shadow: 0px 30px 20px 3px black;
-	@media @mobile{
-		box-shadow: none;
-		
-	}
 	@media @veryLarge{
 		width: 1000px;	
 		left: 50%;
@@ -326,6 +342,60 @@ body{
 	span:hover{
 		color: @background;
 		border-color: @background;
+	}
+}
+.iconText{
+	position: relative;
+	float: left;
+}
+.rating{
+	position: relative;
+	float: right;
+	line-height: 45px;
+	color: #474747;
+	cursor: pointer;
+	div:hover{
+		color: @background;
+	}
+}
+.activePriceBlock{
+	.imgBlue{
+		position: absolute;
+		top: 40px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		opacity: 0.4;
+		background-color: @background;
+	}
+	div:last-child{
+		background-color: @background;
+		h4, p, div{
+			color: white;
+		}
+	}
+}
+#footerImg{
+	background-image: url("../image/city.jpg");
+	padding: 50px 30px;
+	.block{
+		text-align: center;
+		padding: 10px 20px;
+		h2{
+			color: #b0b0b0;
+		}
+		p{
+			color: grey;
+		}
+		margin-left: 25%;
+		background-color: rgba(0, 0, 0, 0.5);
+		@media @medium{
+			margin-left: 8.33%
+		}
+		@media @mobile{
+			margin-left: 0;
+		}
 	}
 }
 
