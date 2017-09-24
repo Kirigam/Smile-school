@@ -1,5 +1,4 @@
 .item {
-    /*margin: 5px 15px;*/
     color: #FFF;
     text-align: center;
 }
@@ -20,7 +19,8 @@ h2{
 .sync.owl-theme {
     position: relative;
 }
-/*////////////////////////////////////////*/
+
+
 #carusel{
     position: relative;
     float: left;
@@ -37,77 +37,4 @@ h2{
     position: relative;
     margin-top: -30px !important;
     z-index: 1 !important;
-}
-#sliderText{
-    float: left;
-    padding: 0 10px 0 10px;
-    width: 100%;
-    z-index: 1;
-}
-#sliderText h1{
-    margin: 10px 0 10px 0;
-    font-weight: 400;
-    text-align: center;
-
-}
-.button{
-    position: relative;
-    width: 120px;
-    height: 35px;
-    line-height: 35px;
-    cursor: pointer;
-    box-shadow: 2px 1px 2px grey;
-    background-color: white;
-    color: #008ffc;
-    border: none;
-    margin: 10px;
-}
-.carBut{
-    margin-top: 40px;
-}
-.button:hover{
-    background-color: #0075cf;
-    color: white;
-}
-.button:active{
-    background-color: #0062ad;
-    color: white;
-    box-shadow: none;
-}
-@media(min-width: 730px){
-    #sliderText{
-        position: absolute;
-        top: 70px;
-        color: white;
-    }
-}
-@media(max-width: 730px){
-    #sliderText{
-        position: relative;
-        color: grey;
-    }
-    .button{
-        background-color: #ededed;
-        width: 150px;
-        height: 45px;
-        line-height: 45px;
-    }
-    .cntr-med{
-        float: left;
-        left: 50%;
-        margin-left: -100px;   
-    }
-}
-@media(max-width: 450px){
-    .button{
-        background-color: #ededed;
-        width: 200px;
-        height: 50px;
-        line-height: 50px;
-    }
-    .cntr-mob{
-        float: left !important;
-        left: 50%;
-        margin-left: -100px;   
-    }
 }

@@ -10,8 +10,6 @@ $(document).ready(function() {
         loop: true,
         responsiveRefreshRate : 5000
     }).on('changed.owl.carousel');
-    $(".owl-next").text("›");
-    $(".owl-prev").text("‹");
 });
 function bar(){
 	var vision = $("#manyBars"); 
