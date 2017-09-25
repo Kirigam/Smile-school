@@ -28,6 +28,11 @@ $(document).ready(function(){
         event.stopPropagation();
     });
 
-
+    /* Like */
+    $(".fa-heart-o").one('click', function(){
+        var index = $(".fa-heart-o").index(this);
+        var num = +$(".like").eq(index).text();
+        $(".like").eq(index).text(++num);
+    });
 
 });
