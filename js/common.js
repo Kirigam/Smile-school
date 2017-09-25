@@ -11,7 +11,13 @@
   	});
 
   	var buton = document.getElementsByClassName('menuBtn')[0];
-  	buton.onclick = () => {
-  		document.getElementsByClassName('mobileMenu')[0].style.visibility = 'visible';
-  	}
+  	var count = 0;
+  	buton.onclick = function() {
+		var mobileMenu = document.getElementsByClassName('mobileMenu')[0];
+		if (mobileMenu.style.display === "none") {
+			mobileMenu.style.display = "block";
+		} else{
+			mobileMenu.style.display = "none";
+		}
+	}
  });
