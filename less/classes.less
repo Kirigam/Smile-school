@@ -1,0 +1,86 @@
+@import 'less';
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+@media @mobile, @medium{
+	.medMobLeft{
+		float: left;
+	}
+	.medMobRight{
+		float: right;
+	}
+	.medMobTextLeft{
+		text-align: left!important;
+	}
+	.medMobTextRight{
+		text-align: right !important;
+	}
+}
+@media @noMobile{
+	.left-noMob{
+		float: left;
+	}
+	.right-noMob{
+		float: right;
+	}
+}
+.cntr{
+	text-align: center;
+}
+.backColorGrey{
+	background-color: @grey;
+}
+.backColorEasyGrey{
+	background-color: @easyGrey;
+}
+.backColorBlue{
+	background-color: @background;
+}
+.colorWhite{
+	color: white!important;
+}
+.line-height_60{
+	h2{
+		line-height: 60px;
+	}
+	p{
+		line-height: 60px;
+	}
+	ul{
+		line-height: 60px;
+	}
+}
+.line-height_15{
+	p{
+		line-height: 17px;
+	}
+	ul{
+		line-height: 17px;
+	}
+}
+.textGrey{
+	h1, h2, h3, h4, h5, h6{
+		color: #474747;
+	}
+	p, span{
+		color: grey;
+	}
+}
+.pad_10{
+	padding: 0 10px 10px 10px;
+}
+.textMarg{
+	padding: 0 10px 0 10px;
+	h4{
+		margin: 3px 0 0 0; 
+	}
+	p{
+		margin: 3px 0 3px 0;
+	}
+}
+.margBot_15{
+	margin-bottom: -15px;
+}

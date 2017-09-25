@@ -19,8 +19,8 @@ header{
 	position: relative;
 	float: left;
 	.itemActive{
-		border-bottom: 2px solid #008ffc;
-		color: #008ffc;
+		border-bottom: 2px solid @background;
+		color: @background;
 	}
 }
 .mainItem{
@@ -43,7 +43,7 @@ header{
 	border-radius: 100%; 
 }
 .search{
-	background-color: #008ffc;
+	background-color: @background
 }
 .basket{
 	background-color: black;
@@ -57,10 +57,10 @@ header{
 }
 #manyBars{
 	position: absolute;
-	display: none;
-	top: 60px;
+	display: block;
+	height: auto;
 	right: 0;
-	background-color: #ededed;
+	background-color: @easyGrey;
 	z-index: 10;
 	@media @big, @veryLarge{
 		display: none !important;
@@ -78,8 +78,8 @@ header{
 	cursor: pointer;
 }
 .itemBar:hover{
-	color: #007deb;
-	border-color: #007deb;
+	color: @meinBar;
+	border-color: @meinBar;
 }
 .big{
 	@media @big, @veryLarge{

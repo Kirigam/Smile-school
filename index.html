@@ -13,375 +13,492 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/price.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/classes.css">
+	<link rel="stylesheet" href="css/collapse.css">
+	<script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js'></script>
+	<script type="text/javascript" src="main.js"></script>
 
 </head>
 <body>
 	<div class="container greyLineCont">
 		<div id="greyLine" ></div>
-		
-	<div id="allContent" class="container">
-		<header class="container">
-			<div class="container">
-				<div class="col-2-12">
-					<div id="logo">
-						<img src="image/logo.jpg">
-					</div>
-				</div>
-				<div id="main" class="col-10-12">
-					<div class="big">
-						<div class="col-9-12">
-							<div class="mainItem itemActive">MAIN</div>
-							<div class="mainItem">ABOUT</div>
-							<div class="mainItem">SERVICE</div>
-							<div class="mainItem">PORTFOLIO</div>
-							<div class="mainItem">BLOG</div>
-							<div class="mainItem">CONTACT</div>
-						</div>
-						<div class="col-3-12">
-							<div class="fa fa-search search"></div>
-							<div class="fa fa-shopping-cart basket"></div>
+		<div id="allContent" class="container">
+			
+
+			<!-- HEADER START-->
+			
+			<header class="container">
+				<div class="container">
+					<div class="col-2-12">
+						<div id="logo">
+							<img src="image/logo.jpg">
 						</div>
 					</div>
-					<div class="small">
-						<div class="fa fa-bars bars" onclick="bar()"></div>
-					</div>
-					
-				</div>	
-			</div>
-			<div id="manyBars" class="container">
-				<div class="itemBar">MAIN</div>
-				<div class="itemBar">ABOUT</div>
-				<div class="itemBar">SERVICE</div>
-				<div class="itemBar">PORTFOLIO</div>
-				<div class="itemBar">BLOG</div>
-				<div class="itemBar">CONTACT</div>
-				<div class="container">
-					<div class="col-6-12">
-						<div class="fa fa-search search right"></div>
-					</div>
-					<div class="col-6-12">
-						<div class="fa fa-shopping-cart basket left"></div>
-					</div>
+					<div id="main" class="col-10-12">
+						<div class="big">
+							<div class="col-9-12">
+								<div class="mainItem itemActive">MAIN</div>
+								<div class="mainItem">ABOUT</div>
+								<div class="mainItem">SERVICE</div>
+								<div class="mainItem">PORTFOLIO</div>
+								<div class="mainItem">BLOG</div>
+								<div class="mainItem">CONTACT</div>
+							</div>
+							<div class="col-3-12">
+								<div class="fa fa-search search"></div>
+								<div class="fa fa-shopping-cart basket"></div>
+							</div>
+						</div>
+						<div class="small">
+							<div class="fa fa-bars bars" onclick="collapse('#collapse3', '#manyBars')"></div>
+						</div>
+						
+					</div>	
 				</div>
-			</div>
-		</header>
-		<div id="carusel">
-			<div id="sync2" class="sync2 owl-carousel owl-theme">
-		        <div class="item">
-		            <div class="owl-image">
-		                <img src="image/foto.jpg" alt="">
-		            </div>
-		        </div>
-		        <div class="item">
-		            <div class="owl-image">
-		                <img src="image/foto.jpg" alt="">
-		            </div>
-		        </div>
-		        <div class="item">
-		            <div class="owl-image">
-		                <img src="image/foto.jpg" alt="">
-		            </div>
-		        </div>
-		        <div class="item">
-		            <div class="owl-image">
-		                <img src="image/foto.jpg" alt="">
-		            </div>
-		        </div>
-		        <div class="item">
-		            <div class="owl-image">
-		                <img src="image/foto.jpg" alt="">
-		            </div>
-		        </div>
-		        <div class="item">
-		            <div class="owl-image">
-		                <img src="image/foto.jpg" alt="">
-		            </div>
-		        </div>
-		    </div>	
-		</div>
-		<div id=sliderText>
-			<h1>if something is not happening for you, it doesn't</h1>
-			<h1>mean it's never goin to happen</h1>
-			<div class="container">
-				<div class="col-6-12 med-6-12 mob-con">
-					<button id="see" class="button carBut right-noMob cntr-mob">SEE MORE</button>
+				<div id="collapse3" class="meinCollapse container">
+						<div id="manyBars" class="container">
+							<div class="itemBar">MAIN</div>
+							<div class="itemBar">ABOUT</div>
+							<div class="itemBar">SERVICE</div>
+							<div class="itemBar">PORTFOLIO</div>
+							<div class="itemBar">BLOG</div>
+							<div class="itemBar">CONTACT</div>
+							<div class="container">
+								<div class="col-6-12">
+									<div class="fa fa-search search right"></div>
+								</div>
+								<div class="col-6-12">
+									<div class="fa fa-shopping-cart basket left"></div>
+								</div>
+							</div>
+						</div>
 				</div>
-				<div class="col-6-12 med-6-12 mob-con">
-					<button id="more" class="button carBut left-noMob cntr-mob">GET NOW</button>
-				</div>
-			</div>
-		</div>
-		<div class="content container">
-			<div class="textContent col-6-12 med-con mob-con">
-				<h2>Who We Are & What We Do</h2>
-				<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasd<span>asdlk jgherilt mao;kljgnjer ;vujta'prgvhtjg kasdff bvcasaafl fdas daasd</span></p>
-				<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao;kljgnjer ;vujta'prgvhtjg kasdff bvcasaafl fdas daasd</p>
-				<div class="container">
-					<button class="readMore button cntr-mob cntr-med">
-						READ MORE ›
-					</button>	
-				</div>
-			</div>
-			<div class="col-6-12 med-con mob-con right">
-				<img src="image/comp.jpg">
-			</div>
-		</div>
-		<div  class="container">
-			<div class="col-6-12 med-con mob-con backColorGrey">
-				<div class="content  container">
-					<div class="textContent line-height_15">
-						<h2 id="OGA" class="margBot_15">Our Great Advatages</h2>
-						<p>njlaskhdf njvcb nisfhgj slhi</p>
-						<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao</p>
-						<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao</p>
-						<ul>
-							<li>lhgsj lfdghls riuysi;o mvu;v[pw oasfd</li>
-							<li>lhgsj lfdghls riuysi;o mvu;v[pw oasfd</li>
-							<li>lhgsj lfdghls riuysi;o mvu;v[pw oasfd</li>
-						</ul>
-						<div class="container">
-							<button class="readMore button blueBut cntr-mob cntr-med">
-								READ MORE ›
-							</button>	
-						</div>		
-					</div>
-				</div>
-			</div>
-			<div class="col-6-12 med-con mob-con foto">
-				<img src="image/ledi.jpg">
-			</div>
-		</div>
-		<div class="container backColorBlue line-height_60 colorWhite cntr">
-			<h2>What We Can Offer For You</h2>
-		</div>
-		<div class="content container icons">
-			<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
-				<div class="fa fa-caret-down triangle"></div>
-				<div class="container textGrey icon">
-					<div class="fa fa-laptop faIcons"></div>
-					<h4>Development</h4>
-					<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem iconsActive">
-				<div class="fa fa-caret-down triangle"></div>
-				<div class="container textGrey icon">
-					<div class="fa fa-leaf faIcons"></div>
-					<h4>Clean Code</h4>
-					<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
-				<div class="fa fa-caret-down triangle"></div>
-				<div class="container textGrey icon">
-					<div class="fa fa-key faIcons"></div>
-					<h4>Full Support</h4>
-					<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
-				<div class="fa fa-caret-down triangle"></div>
-				<div class="container textGrey icon">
-					<div class="fa fa-trophy faIcons"></div>
-					<h4>Winner Design</h4>
-					<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
-				<div class="fa fa-caret-down triangle"></div>
-				<div class="container textGrey icon">
-					<div class="fa fa-cog faIcons"></div>
-					<h4>Easy to Customize</h4>
-					<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
-				<div class="fa fa-caret-down triangle"></div>
-				<div class="container textGrey icon">
-					<div class="fa fa-power-off faIcons"></div>
-					<h4>Crafted Design</h4>
-					<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
-				</div>
-			</div>
-		</div>
-		<div class="content container price">
-			<div class="container cntr textGrey">
-				<h2>Show Of Your Portfolio</h2>
-				<div class="itemPrice">
-					<span>All ITEMS</span>
-					<span>WEB DESIGN</span>
-					<span>PRINT DESIGN</span>
-					<span>PHOTOGRAPHY</span>
-					<span>APPLICATIONS</span>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10 activePriceBlock">
-				<div class="container priceImg">
-					<img src="image/price.jpg">
-					<div class="imgBlue"></div>
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-				
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4-12 med-6-12 mob-con pad_10">
-				<div class="priceImg">
-					<img src="image/price.jpg">
-				</div>
-				<div class="container backColorEasyGrey textMarg">
-					<div class="textGrey iconText">
-						<h4>Business Card</h4>
-						<p>Price Design</p>
-					</div>
-					<div class="rating">
-						<div class="fa fa-eye">273</div>
-						<div class="fa fa-thumbs-up">148</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div id="footerImg" class="container" onresize="navbar()">
-				<div id="sync1" class="sync2 owl-carousel owl-theme">
+			</header>
+
+			<!-- HEADER end-->
+
+
+			<!-- SLIDER start-->
+
+			<div id="carusel">
+				<div id="sync2" class="sync2 owl-carousel owl-theme">
 			        <div class="item">
 			            <div class="owl-image">
-			                <div class="col-6-12 med-10-12 mob-con block">
-								<h2>WORK HARD DREAM BIG</h2>
-								<p>asd awfsdgfg ljn laskhnf fmlawk hnajlsfj anm lawj nm,ashjg jhbh gg mgb, kjgbhjvbnmb ,md</p>
-							</div>
+			                <img src="image/foto.jpg" alt="">
 			            </div>
 			        </div>
 			        <div class="item">
 			            <div class="owl-image">
-			                <div class="col-6-12 med-10-12 mob-con block">
-								<h2>WORK HARD DREAM BIG</h2>
-								<p>asd awfsdgfg ljn laskhnf fmlawk hnajlsfj anm lawj nm,ashjg jhbh gg mgb, kjgbhjvbnmb ,md</p>
-							</div>
+			                <img src="image/foto.jpg" alt="">
+			            </div>
+			        </div>
+			        <div class="item">
+			            <div class="owl-image">
+			                <img src="image/foto.jpg" alt="">
+			            </div>
+			        </div>
+			        <div class="item">
+			            <div class="owl-image">
+			                <img src="image/foto.jpg" alt="">
+			            </div>
+			        </div>
+			        <div class="item">
+			            <div class="owl-image">
+			                <img src="image/foto.jpg" alt="">
+			            </div>
+			        </div>
+			        <div class="item">
+			            <div class="owl-image">
+			                <img src="image/foto.jpg" alt="">
 			            </div>
 			        </div>
 			    </div>	
-				
-			</div>			
+			</div>
+			<div id=sliderText>
+				<h1>if something is not happening for you, it doesn't</h1>
+				<h1>mean it's never goin to happen</h1>
+				<div class="container">
+					<div class="col-6-12 med-6-12 mob-con">
+						<button id="see" class="button carBut right-noMob cntr-mob">SEE MORE</button>
+					</div>
+					<div class="col-6-12 med-6-12 mob-con">
+						<button id="more" class="button carBut left-noMob cntr-mob">GET NOW</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- SLIDER END -->
+
+			
+
+			<!-- WHO WE ARE START-->
+
+			<div class="content container">
+				<div class="textContent col-6-12 med-con mob-con">
+					<h2>Who We Are & What We Do</h2>
+					<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasd<span>asdlk jgherilt mao;kljgnjer ;vujta'prgvhtjg kasdff bvcasaafl fdas daasd</span></p>
+					<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao;kljgnjer ;vujta'prgvhtjg kasdff bvcasaafl fdas daasd</p>
+					<div class="container">
+						<button class="readMore button cntr-mob cntr-med">
+							READ MORE ›
+						</button>	
+					</div>
+				</div>
+				<div class="col-6-12 med-con mob-con right">
+					<img src="image/comp.jpg">
+				</div>
+			</div>
+			
+			<!-- WHO WE ARE END  -->
+
+
+			<!-- OUR GREATE START -->
+
+			<div  class="container">
+				<div class="col-6-12 med-con mob-con backColorGrey">
+					<div class="content  container">
+						<div class="textContent line-height_15">
+							<h2 id="OGA" class="margBot_15">Our Great Advatages</h2>
+							<p>njlaskhdf njvcb nisfhgj slhi</p>
+							<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao</p>
+							<p>njlaskhdf njvcb nisfhgj slhi usrhtuvil sngadsf dbasdfd asdafd asdaas dkjsgvlskjf lghuvrlhgsj lfdghls riuysi;o mvu;v[pw oasfd gvdsafd asd aasdasdlk jgherilt mao</p>
+							<ul>
+								<li>lhgsj lfdghls riuysi;o mvu;v[pw oasfd</li>
+								<li>lhgsj lfdghls riuysi;o mvu;v[pw oasfd</li>
+								<li>lhgsj lfdghls riuysi;o mvu;v[pw oasfd</li>
+							</ul>
+							<div class="container">
+								<button class="readMore button blueBut cntr-mob cntr-med">
+									READ MORE ›
+								</button>	
+							</div>		
+						</div>
+					</div>
+				</div>
+				<div class="col-6-12 med-con mob-con foto">
+					<img src="image/ledi.jpg">
+				</div>
+			</div>
+
+			<!-- OUR GREATE START END -->
+			
+
+			<div class="container backColorBlue line-height_60 colorWhite cntr">
+				<h2>What We Can Offer For You</h2>
+			</div>
+
+
+			<!-- ICONS START -->
+
+			<div class="content container icons">
+				<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
+					<div class="fa fa-caret-down triangle"></div>
+					<div class="container textGrey icon">
+						<div class="fa fa-laptop faIcons"></div>
+						<h4>Development</h4>
+						<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+					</div>
+				</div>
+
+
+				<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem iconsActive duoOut"> <!-- a duplicate block that is inside and outside collapse -->
+					<div class="fa fa-caret-down triangle"></div>
+					<div class="container textGrey icon">
+						<div class="fa fa-leaf faIcons"></div>
+						<h4>Clean Code</h4>
+						<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+					</div>
+				</div>
+				<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem trioOut"> <!-- a duplicate block that is inside and outside collapse -->
+					<div class="fa fa-caret-down triangle"></div>
+					<div class="container textGrey icon">
+						<div class="fa fa-key faIcons"></div>
+						<h4>Full Support</h4>
+						<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+					</div>
+				</div>
+				<div id="collapse1" class="collapse container">
+					<div id="blockCollapse1" class="container">
+						<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem iconsActive duoIn"> <!-- a duplicate block that is inside and outside collapse -->
+							<div class="fa fa-caret-down triangle"></div>
+							<div class="container textGrey icon">
+								<div class="fa fa-leaf faIcons"></div>
+								<h4>Clean Code</h4>
+								<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem trioIn"> <!-- a duplicate block that is inside and outside collapse -->
+							<div class="fa fa-caret-down triangle"></div>
+							<div class="container textGrey icon">
+								<div class="fa fa-key faIcons"></div>
+								<h4>Full Support</h4>
+								<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
+							<div class="fa fa-caret-down triangle"></div>
+							<div class="container textGrey icon">
+								<div class="fa fa-trophy faIcons"></div>
+								<h4>Winner Design</h4>
+								<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
+							<div class="fa fa-caret-down triangle"></div>
+							<div class="container textGrey icon">
+								<div class="fa fa-cog faIcons"></div>
+								<h4>Easy to Customize</h4>
+								<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10 cntr iconItem">
+							<div class="fa fa-caret-down triangle"></div>
+							<div class="container textGrey icon">
+								<div class="fa fa-power-off faIcons"></div>
+								<h4>Crafted Design</h4>
+								<p>asdf gbvcs aqwfgcsw asdfg awegfdca a asfsaw asf awsd awsfgtjh</p>
+							</div>
+						</div>
+					</div>
+						
+				</div>
+				<div class="container textGrey">
+					<span id="butCollapse1" 
+					class="butCollapse" 
+					onclick="collapse('#collapse1', '#blockCollapse1', '#butCollapse1')"
+					>›</span>
+				</div>
+			</div>
+
+			<!-- ICONS END -->
+
+
+			<!-- PRICE START -->
+
+			<div class="content container price">
+				<div class="container cntr textGrey">
+					<h2>Show Of Your Portfolio</h2>
+					<div class="itemPrice">
+						<span>All ITEMS</span>
+						<span>WEB DESIGN</span>
+						<span>PRINT DESIGN</span>
+						<span>PHOTOGRAPHY</span>
+						<span>APPLICATIONS</span>
+					</div>
+				</div>
+				<div class="col-4-12 med-6-12 mob-con pad_10 activePriceBlock">
+					<div class="container priceImg">
+						<img src="image/price.jpg">
+						<div class="imgBlue"></div>
+					</div>
+					<div class="container backColorEasyGrey textMarg">
+						<div class="textGrey iconText">
+							<h4>Business Card</h4>
+							<p>Price Design</p>
+						</div>
+						<div class="rating">
+							<div class="fa fa-eye">273</div>
+							<div class="fa fa-thumbs-up">148</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4-12 med-6-12 mob-con pad_10 duoOut"> <!-- a duplicate block that is inside and outside collapse -->
+					<div class="priceImg">
+						<img src="image/price.jpg">
+					</div>
+					<div class="container backColorEasyGrey textMarg">
+						<div class="textGrey iconText">
+							<h4>Business Card</h4>
+							<p>Price Design</p>
+						</div>
+						<div class="rating">
+							<div class="fa fa-eye">273</div>
+							<div class="fa fa-thumbs-up">148</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4-12 med-6-12 mob-con pad_10 trioOut"> <!-- a duplicate block that is inside and outside collapse -->
+					<div class="priceImg">
+						<img src="image/price.jpg">
+					</div>
+					<div class="container backColorEasyGrey textMarg">
+						<div class="textGrey iconText">
+							<h4>Business Card</h4>
+							<p>Price Design</p>
+						</div>
+						<div class="rating">
+							<div class="fa fa-eye">273</div>
+							<div class="fa fa-thumbs-up">148</div>
+						</div>
+					</div>
+				</div>
+				<div id="collapse2" class="collapse container">
+					<div id="blockCollapse2" class="container">
+						<div class="col-4-12 med-6-12 mob-con pad_10 duoIn"> <!-- a duplicate block that is inside and outside collapse -->
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg"> <!-- a duplicate block that is inside and outside collapse -->
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10 trioIn">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4-12 med-6-12 mob-con pad_10">
+							<div class="priceImg">
+								<img src="image/price.jpg">
+							</div>
+							<div class="container backColorEasyGrey textMarg">
+								<div class="textGrey iconText">
+									<h4>Business Card</h4>
+									<p>Price Design</p>
+								</div>
+								<div class="rating">
+									<div class="fa fa-eye">273</div>
+									<div class="fa fa-thumbs-up">148</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container textGrey">
+					<span id="butCollapse2" 
+					class="butCollapse" 
+					onclick="collapse('#collapse2', '#blockCollapse2', '#butCollapse2')"
+					>›</span>
+				</div>
+			</div>
+
+			<!-- PRICE END -->
+
+
+			<!-- FOOTER -->
+
+			<div class="container">
+				<div id="footerImg" class="container" onresize="navbar()">
+					<div id="sync1" class="sync2 owl-carousel owl-theme">
+				        <div class="item">
+				            <div class="owl-image">
+				                <div class="col-6-12 med-10-12 mob-con block">
+									<h2>WORK HARD DREAM BIG</h2>
+									<p>asd awfsdgfg ljn laskhnf fmlawk hnajlsfj anm lawj nm,ashjg jhbh gg mgb, kjgbhjvbnmb ,md</p>
+								</div>
+				            </div>
+				        </div>
+				        <div class="item">
+				            <div class="owl-image">
+				                <div class="col-6-12 med-10-12 mob-con block">
+									<h2>WORK HARD DREAM BIG</h2>
+									<p>asd awfsdgfg ljn laskhnf fmlawk hnajlsfj anm lawj nm,ashjg jhbh gg mgb, kjgbhjvbnmb ,md</p>
+								</div>
+				            </div>
+				        </div>
+				    </div>	
+					
+				</div>			
+			</div>
+
+			<!-- FOOTER END-->
+
 		</div>
 	</div>
-	</div>
-
 </body>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-	<script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js'></script>
-	<script type="text/javascript" src="main.js"></script>
 </html>

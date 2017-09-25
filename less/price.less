@@ -1,0 +1,54 @@
+@import 'less';
+.priceImg{
+	img{
+		width: 100%;
+		height: auto;
+	} 
+}
+.itemPrice{
+	span{
+		position: relative;
+		line-height: 30px;
+		text-align: center;
+		font-size: 10px;
+		padding: 0 5px 0 5px;
+		border-bottom: 1px solid @easyGrey;
+		cursor: pointer;
+	}
+	span:hover{
+		color: @background;
+		border-color: @background;
+	}
+}
+.iconText{
+	position: relative;
+	float: left;
+}
+.rating{
+	position: relative;
+	float: right;
+	line-height: 45px;
+	color: #474747;
+	cursor: pointer;
+	div:hover{
+		color: @background;
+	}
+}
+.activePriceBlock{
+	.imgBlue{
+		position: absolute;
+		top: 40px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		opacity: 0.4;
+		background-color: @background;
+	}
+	div:last-child{
+		background-color: @background;
+		h4, p, div{
+			color: white;
+		}
+	}
+}

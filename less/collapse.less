@@ -1,0 +1,67 @@
+@import 'less';
+.collapse{
+	@media @big, @veryLarge{
+		position: relative;
+		height: auto!important;
+		overflow: visible;
+	}
+	@media @mobile, @medium{
+		height: 0;
+		overflow: hidden;
+
+	}
+	
+}
+.meinCollapse{
+	position: absolute;
+	right: 0;
+	top: 60px;
+	@media @mobile, @medium{
+		height: 0;
+		overflow: hidden;
+	}
+}
+@media @mobile, @medium{
+	.butCollapse{
+		cursor: pointer;
+		position: relative;
+		float: left;
+		left: 50%;
+		margin: 0 0 -20px 21px;
+		display: block;
+		font-size: 60px;
+		line-height: 30px;
+		transform: rotate(90deg);
+		transform-origin: 0% 0%;
+	}
+}
+.butCollapse:hover{
+	color: @easyBlue;
+}
+.duoOut{
+	display: none;
+	@media @medium, @big, @veryLarge{
+		display: block;
+	}
+
+}
+.trioOut{
+	display: none;
+	@media @big, @veryLarge{
+		display: block;
+	}
+}
+.duoIn{
+	display: none;
+	@media @mobile{
+		display: block;
+	}
+
+}
+.trioIn{
+	display: none;
+	@media @mobile, @medium{
+		display: block;
+	}
+}
+

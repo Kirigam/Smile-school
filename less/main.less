@@ -4,13 +4,11 @@ html{
 }
 body{
 	margin: 0;
-	// overflow: hidden;
-	
 }
 .greyLineCont{
 	padding: 40px;
 	margin: 0;
-	background-color: #008ffc;
+	background-color: @background;
 	@media @mobile{
 		padding: 0;
 	}
@@ -20,14 +18,11 @@ body{
 #greyLine{
 	position: absolute;
 	top: 1900px;
-	// right: 0;
-	// bottom: 0;
-	// left: 0;
 	float: left;
 	width: 400%;
 	height: 1500px;
 	left: -100%;
-	background-color: #3b3b3b;
+	background-color: @greyLine;
 	transform: rotate(30deg);
 }
 #allContent{
@@ -52,28 +47,28 @@ body{
     cursor: pointer;
     box-shadow: 2px 1px 2px grey;
     background-color: white;
-    color: #008ffc;
+    color: @background;
     border: none;
     margin: 10px;
     @media @medium{
-        background-color: #ededed;
+        background-color: @easyGrey;
         width: 150px;
         height: 45px;
         line-height: 45px;
 	}
 	@media @mobile{
-        background-color: #ededed;
+        background-color: @easyGrey;
         width: 200px;
         height: 50px;
         line-height: 50px;
 	}
 }
 .button:hover{
-    background-color: #0075cf;
+    background-color: @butHover;
     color: white;
 }
 .button:active{
-    background-color: #0062ad;
+    background-color: @butActive;
     color: white;
     box-shadow: none;
 }
@@ -94,7 +89,6 @@ body{
         margin-left: -100px !important;   
     }
 }
-
 .content{
 	position: relative;
 	float: left;
@@ -114,7 +108,7 @@ body{
 		font-size: 14px;
 		line-height: 24px;
 		p>span{
-			color: #008ffc;
+			color: @background;
 		}
 		h2{
 			color: black;
@@ -142,7 +136,7 @@ body{
 		img{
 			position: absolute;
 			width: auto;
-			height: 495px;
+			height: 545px;
 			top: 0px;
 			right: 0px;
 		}
@@ -170,216 +164,14 @@ body{
 #OGA{
 	color: white;
 }
-.margBot_15{
-	margin-bottom: -15px;
-}
 .readMore{
 	box-shadow: 0px 5px 5px grey;
 	margin: 10px 0 10px 0;
 }
 .blueBut{
-	background-color: #0062ad;
-	box-shadow: 0px 5px 5px #3686d6;
+	background-color: @butActive;
+	box-shadow: 0px 5px 5px @easyBlue;
 	color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.left{
-	float: left;
-}
-.right{
-	float: right;
-}
-@media @mobile, @medium{
-	.medMobLeft{
-		float: left;
-	}
-	.medMobRight{
-		float: right;
-	}
-	.medMobTextLeft{
-		text-align: left!important;
-	}
-	.medMobTextRight{
-		text-align: right !important;
-	}
-}
-@media @noMobile{
-	.left-noMob{
-		float: left;
-	}
-	.right-noMob{
-		float: right;
-	}
-}
-.cntr{
-	text-align: center;
-}
-.backColorGrey{
-	background-color: #292929;
-}
-.backColorEasyGrey{
-	background-color: #ededed;
-}
-.backColorBlue{
-	background-color: @background;
-}
-.colorWhite{
-	color: white!important;
-}
-.line-height_60{
-	h2{
-		line-height: 60px;
-	}
-	p{
-		line-height: 60px;
-	}
-	ul{
-		line-height: 60px;
-	}
-}
-.line-height_15{
-	p{
-		line-height: 17px;
-	}
-	ul{
-		line-height: 17px;
-	}
-}
-.textGrey{
-	h1, h2, h3, h4, h5, h6{
-		color: #474747;
-	}
-	p, span{
-		color: grey;
-	}
-}
-.pad_10{
-	padding: 0 10px 10px 10px;
-}
-.textMarg{
-	padding: 0 10px 0 10px;
-	h4{
-		margin: 3px 0 0 0; 
-	}
-	p{
-		margin: 3px 0 3px 0;
-	}
-}
-.priceImg{
-	img{
-		width: 100%;
-		height: auto;
-	} 
-}
-
-
-
-
-
-
-
-.icon{
-	margin: 40px 0 0 0;
-}
-.triangle{
-	visibility: hidden;
-	font-size: 30px;
-	line-height: 7px;
-	color: @background;
-}
-.faIcons{
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	font-size: 20px;
-	border-radius: 100%;
-	border: 1px solid @background;
-	color: @background;
-}
-.test{
-	.triangle{
-		visibility: visible;
-	}
-	.faIcons{
-		color: white;
-		background-color: @background;
-	}
-	h4{
-		color: @background;
-	}
-}
-.iconsActive{
-	.test;
-}
-.iconItem:hover{
-	.test;
-	cursor: pointer;
-}
-.icons{
-	background-color: #ededed;
-}
-
-
-
-.itemPrice{
-	// width: 553px;
-	span{
-		position: relative;
-		// float: left;
-		line-height: 30px;
-		text-align: center;
-		font-size: 10px;
-		padding: 0 5px 0 5px;
-		border-bottom: 1px solid #ededed;
-		cursor: pointer;
-	}
-	span:hover{
-		color: @background;
-		border-color: @background;
-	}
-}
-.iconText{
-	position: relative;
-	float: left;
-}
-.rating{
-	position: relative;
-	float: right;
-	line-height: 45px;
-	color: #474747;
-	cursor: pointer;
-	div:hover{
-		color: @background;
-	}
-}
-.activePriceBlock{
-	.imgBlue{
-		position: absolute;
-		top: 40px;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		z-index: 10;
-		opacity: 0.4;
-		background-color: @background;
-	}
-	div:last-child{
-		background-color: @background;
-		h4, p, div{
-			color: white;
-		}
-	}
 }
 #footerImg{
 	background-image: url("../image/city.jpg");
@@ -388,7 +180,7 @@ body{
 		text-align: center;
 		padding: 10px 20px;
 		h2{
-			color: #b0b0b0;
+			color: @easyGrey;
 		}
 		p{
 			color: grey;
