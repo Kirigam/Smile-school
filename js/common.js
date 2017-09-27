@@ -9,10 +9,18 @@
         autoplaySpeed: 3000,
         fade: true
   	});
+     $('.sl1').slick({
+         autoplay: false,
+         cssEase: 'ease-in',
+         speed: 600,
+         dots: false,
+         arrows: true,
+         fade: false
+     });
 
-  	var buton = document.getElementsByClassName('menuBtn')[0];
-  	var count = 0;
-  	buton.onclick = function() {
+
+
+     document.getElementsByClassName('menuBtn')[0].onclick = function() {
 		var mobileMenu = document.getElementsByClassName('mobileMenu')[0];
 		if (mobileMenu.style.display === "none") {
 			mobileMenu.style.display = "block";
