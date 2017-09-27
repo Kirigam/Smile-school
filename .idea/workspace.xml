@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="eb1b3470-ee71-41dd-a43c-d2beb84c6acd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/styles.less" afterPath="$PROJECT_DIR$/less/styles.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/slick/carrousel_settings.js" afterPath="$PROJECT_DIR$/plugins/slick/carrousel_settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/slick/slick-theme.css" afterPath="$PROJECT_DIR$/plugins/slick/slick-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/slick/slick-theme.less" afterPath="$PROJECT_DIR$/plugins/slick/slick-theme.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +24,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="296" column="88" lean-forward="false" selection-start-line="296" selection-start-column="88" selection-end-line="296" selection-end-column="88" />
+            <state relative-caret-position="49">
+              <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/slick/slick-theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="72" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -33,48 +44,18 @@
       <file leaf-file-name="styles.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="651" column="11" lean-forward="false" selection-start-line="651" selection-start-column="11" selection-end-line="651" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file:///media/disk_d/web-розробка/SMILE/project/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="344" column="82" lean-forward="false" selection-start-line="344" selection-start-column="82" selection-end-line="344" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file:///media/disk_d/web-розробка/SMILE/project/app/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-2250">
+              <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
-        <entry file="file:///media/disk_d/web-розробка/SMILE/project/app/js/scripts.js">
+        <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+            <state relative-caret-position="395">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -96,6 +77,7 @@
       <find>h6</find>
       <find>before</find>
       <find>fa-thumbs-o-up</find>
+      <find>fade</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,9 +89,12 @@
         <option value="$PROJECT_DIR$/../../training/javascript.js" />
         <option value="$PROJECT_DIR$/../../training/index.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/less/styles.less" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/plugins/slick/slick-theme.less" />
+        <option value="$PROJECT_DIR$/plugins/slick/slick-theme.css" />
+        <option value="$PROJECT_DIR$/plugins/slick/carrousel_settings.js" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/less/styles.less" />
       </list>
     </option>
   </component>
@@ -142,8 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,12 +151,39 @@
             </path>
             <path>
               <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slick" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slick" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slick.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
+              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slick" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slick-theme.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="school" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,16 +221,16 @@
       <workItem from="1506184412884" duration="606000" />
       <workItem from="1506195240734" duration="9741000" />
       <workItem from="1506266180108" duration="25206000" />
-      <workItem from="1506331657158" duration="14847000" />
+      <workItem from="1506331657158" duration="15102000" />
+      <workItem from="1506367188339" duration="8712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64868000" />
+    <option name="totallyTimeSpent" value="73835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18524212" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -229,7 +239,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34059098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -268,10 +278,10 @@
         <state relative-caret-position="13428">
           <caret line="746" column="1" lean-forward="true" selection-start-line="746" selection-start-column="1" selection-end-line="746" selection-end-column="1" />
           <folding>
-            <marker date="1506337293746" expanded="true" signature="7938:8172" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10051:10113" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10203:10247" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="11213:11257" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="7938:8172" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10051:10113" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10203:10247" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="11213:11257" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -347,10 +357,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506337293746" expanded="true" signature="7938:8172" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10051:10113" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10203:10247" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="11213:11257" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="7938:8172" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10051:10113" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10203:10247" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="11213:11257" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -388,10 +398,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506337293746" expanded="true" signature="7938:8172" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10051:10113" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10203:10247" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="11213:11257" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="7938:8172" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10051:10113" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10203:10247" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="11213:11257" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -437,10 +447,10 @@
         <state relative-caret-position="2021">
           <caret line="475" column="28" lean-forward="true" selection-start-line="475" selection-start-column="28" selection-end-line="475" selection-end-column="28" />
           <folding>
-            <marker date="1506337293746" expanded="true" signature="7938:8172" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10051:10113" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="10203:10247" ph="{...}" />
-            <marker date="1506337293746" expanded="true" signature="11213:11257" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="7938:8172" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10051:10113" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="10203:10247" ph="{...}" />
+            <marker date="1506377447476" expanded="true" signature="11213:11257" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -453,25 +463,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/plugins/slick/slick.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="296" column="88" lean-forward="false" selection-start-line="296" selection-start-column="88" selection-end-line="296" selection-end-column="88" />
+        <state relative-caret-position="-1821">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/styles.less">
+    <entry file="file://$PROJECT_DIR$/plugins/slick/slick.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="651" column="11" lean-forward="false" selection-start-line="651" selection-start-column="11" selection-end-line="651" selection-end-column="11" />
+        <state relative-caret-position="324">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///media/disk_d/web-розробка/SMILE/project/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="18">
           <caret line="344" column="82" lean-forward="false" selection-start-line="344" selection-start-column="82" selection-end-line="344" selection-end-column="82" />
           <folding />
         </state>
@@ -479,16 +489,58 @@
     </entry>
     <entry file="file:///media/disk_d/web-розробка/SMILE/project/app/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        <state relative-caret-position="666">
+          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/slick/carrousel_settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/slick/slick-theme.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="395">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2250">
+          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/slick/slick-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="72" selection-end-column="19" />
           <folding />
         </state>
       </provider>

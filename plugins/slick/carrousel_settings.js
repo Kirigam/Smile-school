@@ -1,6 +1,13 @@
 ﻿/* Start slider1 */
 
 $(document).on('ready', function() {
+    $('.fade').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 	var value = true;
 	if($(window).width() > 640) { value = true} else {value = false};
   $(".single-slide").slick({
@@ -12,8 +19,4 @@ $(document).on('ready', function() {
 	autoplaySpeed: 5000,
 	arrows: false,
   });
-  
-
 });
-
-/* /Carrousel of dishes; */

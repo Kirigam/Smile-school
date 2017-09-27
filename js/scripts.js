@@ -29,10 +29,10 @@ $(document).ready(function(){
     });
 
     /* Like */
-    $(".fa-heart-o").one('click', function(){
-        var index = $(".fa-heart-o").index(this);
+    $(".fa-heart-o").one("click", function(){
+        var index = $(".btn").index(this);
         var num = +$(".like").eq(index).text();
         $(".like").eq(index).text(++num);
+        $(this).toggleClass('fa-heart').removeClass('fa-heart-o');
     });
-
 });

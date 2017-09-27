@@ -39,7 +39,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: #fff;
+    background: transparent;
 	z-index: 10;
 	opacity: 0.75;
 }
@@ -69,11 +69,11 @@
 .slick-next:before
 {
     font-family: 'FontAwesome';
-    font-size: 15px;
+    font-size: 32px;
     line-height: 1;
 
     opacity: 0.75;
-    color: black;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -81,7 +81,7 @@
 
 .slick-prev
 {
-    left: 25px;
+    left: -55px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -90,7 +90,7 @@
 }
 .slick-prev:before
 {
-    content: "\f053";
+    content: "\f100";
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -99,7 +99,7 @@
 
 .slick-next
 {
-    right: 25px;
+    right: -55px;
 }
 [dir='rtl'] .slick-next
 {
@@ -108,7 +108,7 @@
 }
 .slick-next:before
 {
-    content: "\f054";
+    content: "\f101";
 }
 [dir='rtl'] .slick-next:before
 {
