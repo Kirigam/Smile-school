@@ -1,8 +1,14 @@
 .zoom {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    background: rgba(0,0,0,.85);
+}
+.zoom img {
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 900px;
+    margin: 50px auto;
 }

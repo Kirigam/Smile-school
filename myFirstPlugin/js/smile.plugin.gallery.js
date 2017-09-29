@@ -11,13 +11,12 @@
     return this.each(function () {
         var self = this
 
-        $('.gallery').children().find('img').click(function() {
-
-            if($(this).hasClass('zoom')) {
-                $(this).removeClass('zoom')
-            } else {
-                $(this).toggleClass('zoom')
-            }
+        $('.gallery').find('img').click(function() {
+            var link = $(this).attr("src");
+            $('body').append('<div class="zoom"><img src=' + link + '></div>');
+            $('.zoom').click (function(){
+                $(this).remove()
+            });
         });
 
 
