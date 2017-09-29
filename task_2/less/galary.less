@@ -1,0 +1,53 @@
+.galaryBackground{
+	position: absolute;
+	display: block;
+	// overflow: hidden;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.bigImgBlock{
+	position: absolute;
+	width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	overflow: hidden;
+	
+}
+.bigImg{
+	position: relative;
+	float: left;
+	img{
+    	// width: 30%;
+    }
+
+}
+.galaryBut{
+	position: absolute;
+	z-index: 100;
+	display: block!important;
+	cursor: pointer;
+	top: 50%;
+	margin-top: -28px;
+	div{
+		font-size: 100px;
+		line-height: 20px;
+		height: 57px;
+		transform: rotate(90deg);
+		width: 50px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+.galaryNext{
+	div{	
+		transform: rotate(-90deg);
+	}
+	right: 20px;
+}
+.galaryPrev{
+	left: 20px;
+}
