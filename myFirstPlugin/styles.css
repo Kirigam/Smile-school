@@ -2,9 +2,7 @@ body {
     background: lightgreen;
 }
 .gallery {
-    width: 966px;
     border: 3px solid blue;
-    margin: 150px auto;
     box-sizing: border-box;
 }
 .gallery span {

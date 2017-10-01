@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.gallery').galleryPlugin({
-        margin: '250px auto',
-        width : '966px'
+        margin: '150px auto',
+        width : '966px',
+        description: true
     });
 });
