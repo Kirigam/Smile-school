@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.gallery').galleryPlugin({
-        width: '966px'
+        margin: '250px auto',
+        width : '966px'
     });
 });
