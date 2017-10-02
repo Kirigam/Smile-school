@@ -137,6 +137,11 @@ p {
   visibility: hidden;
   margin-top: 15px;
 }
+.fa-times-circle,
+.fa-chevron-right,
+.fa-chevron-left {
+  color: rgba(255,255,255,.5);
+}
 .fa-times-circle {
   position: absolute;
   top: 2%;
