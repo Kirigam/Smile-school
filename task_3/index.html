@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/widget.jQuery.js"></script>
+    <script src="js/script.js"></script>
+  <style>
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="slider"></div>
+</body>
+</html>
+<script>
+    $.widget('smile.smileSlider', $.ui.slider, {
+        values: function() {
+            var r=Math.floor(Math.random() * (256));
+            var g=Math.floor(Math.random() * (256));
+            var b=Math.floor(Math.random() * (256));
+            var c='#' + r.toString(16) + g.toString(16) + b.toString(16);
+            $('body').css("background", c);
+            return this._super();
+        }
+        });
+    $( "#slider" ).smileSlider({});
+</script>
