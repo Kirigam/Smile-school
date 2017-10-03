@@ -42,7 +42,7 @@
             });
             $('.fa-chevron-left').click(function () {
                 $('.zoom img').remove();
-                if(i <= 1) i = 4;
+                if(i <= 1) i = 7;
                 $('.zoom').append('<img src=' + (str1 + (--i) + str2) + '>');
             });
         });

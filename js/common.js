@@ -29,7 +29,6 @@
 		}
 	}
 	$('.gallery').galleryPlagin({
-        arrows: true,
-        autoplay: true
+        arrows: true
     });
  });
