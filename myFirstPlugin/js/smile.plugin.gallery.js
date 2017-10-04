@@ -31,13 +31,13 @@
             $('.arrows').click(function() {
                 if ($(this).hasClass('prev')) {
                     var toLink = imagesArr[--index];
-                    if (index == -1) {
+                    while (index == -1) {
                         index = imagesCount - 1;
                         toLink = imagesArr[imagesCount - 1];
                     }
                  } else {
                     toLink = imagesArr[++index];
-                    if (index == imagesCount) {
+                    while (index == imagesCount) {
                         index = 0;
                         toLink = imagesArr[0];
                     }
