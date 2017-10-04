@@ -7,17 +7,16 @@
         }, settings);
 
         return $('.gallery').find('img').click(function () {
-            var src  = this.src;
-            var index = src.lastIndexOf('f');
-            var index1 = src.lastIndexOf('.');
-            var str1 = src.substring(0, ++index);
-            var str2 = src.substring(index1);
-            var i = src.substring(index, index1);
-            var images = $('.gallery img');
+            var images = $('.gallery').find('img');
+            var self = this;
+            var index;
+            for(var i = 0; i < images.length; i++) {
+                if(self.src === images[i].src) index = i;
+            }
 
-
-            $('body').append('<div class="zoom"><img src=' + src + '></div>');
+            $('body').append('<div class="zoom"><img src=' + images[index].src + '></div>');
             $('.zoom').append('<i class="fa fa-times-circle fa-2x"></i>');
+
             if(defaulSettings.arrows) {
                 $('.zoom').append('<i class="fa fa-chevron-right fa-2x"></i>');
                 $('.zoom').append('<i class="fa fa-chevron-left fa-2x"></i>');
@@ -25,8 +24,8 @@
             if(defaulSettings.autoplay) {
                 setInterval(function () {
                     $('.zoom img').remove();
-                    if(i >= images.length) i = 0;
-                    $('.zoom').append('<img src=' + (str1 + (++i) + str2) + '>');
+                    if(index >= images.length-1) index = -1;
+                    $('.zoom').append('<img src=' + images[++index].src + '>');
                 } ,defaulSettings.autoplaySpeed);
             }
 
@@ -37,13 +36,13 @@
 
             $('.fa-chevron-right').click(function () {
                 $('.zoom img').remove();
-                if(i >= images.length) i = 0;
-                $('.zoom').append('<img src=' + (str1 + (++i) + str2) + '>');
+                if(index >= images.length-1) index = -1;
+                $('.zoom').append('<img src=' + images[++index].src + '>');
             });
             $('.fa-chevron-left').click(function () {
                 $('.zoom img').remove();
-                if(i <= 1) i = 7;
-                $('.zoom').append('<img src=' + (str1 + (--i) + str2) + '>');
+                if(index <= 0) index = images.length;
+                $('.zoom').append('<img src=' + images[--index].src + '>');
             });
         });
     }

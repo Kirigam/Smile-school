@@ -583,3 +583,7 @@ footer .footerText .slaide {
     width: 33.33333333%;
   }
 }
+
+.body a label {
+  display: inline-block;
+}

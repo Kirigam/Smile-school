@@ -27,8 +27,9 @@
 		} else{
 			mobileMenu.style.display = "none";
 		}
-	}
+	};
 	$('.gallery').galleryPlagin({
         arrows: true
     });
+
  });
