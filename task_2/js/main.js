@@ -1,5 +1,5 @@
  $(document).ready(function () {
-   $('.galaryImg').smile({
+   $('.galaryCon').smile({
    		button: true,
     });
 });

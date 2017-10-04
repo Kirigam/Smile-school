@@ -2,6 +2,10 @@
    /**
     * @param options
     * @returns {*}
+    * динамічно додавти класи
+    * масив обь'єктів з тим що треба
+    * дада-індекс attr(data-index, i++)
+    * кнопки рендерити динамічно
     */
     $.fn.smile = function (options) {
       var defaulSettings = $.extend({
@@ -9,7 +13,8 @@
       }, options);
       var html,
       imgHtml,
-      allImg = this;
+      allImg = [];
+      $(this).find('div').addClass("blockImg col-4-12").find('img').addClass("galaryImg");
       this.each(function () {
         var self = this;
 
