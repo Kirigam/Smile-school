@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="widget.jQuery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="content_modal" style="display: none">
+    <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur eaque eius eligendi error est, illo, incidunt inventore ipsum, itaque iusto minus mollitia neque nihil quia reiciendis rem veniam veritatis? </span>
+</div>
+<button class="smallBtn">Push me</button>
+<audio id="push" src="sound.mp3"></audio>
+</body>
+</html>
+<script>
+    $.widget('smile.smileDialog',
+        $.ui.dialog, {
+            close: function () {
+                alert('You sure, you want to close this window?');
+                return this._super();
+            },
+            background: function () {
+                this.element.css({'background-color' : 'lightgrey', 'color' : 'white'})
+            },
+            closeOnEscape: true,
+            image: function () {
+                this.element.append('<img src="images/nature.jpg">').find('img').css('width', '100%')
+            }
+
+        });
+    $('.smallBtn').button({
+        classes: {
+            "ui-button": "highlight"
+        }
+    })
+    .on('click', function () {
+        document.getElementById('push').play();
+        var modal = $('.content_modal').smileDialog({
+            buttons: {
+                "Change color": function () {
+                    modal.smileDialog("background");
+                },
+                "Add image": function () {
+                    modal.smileDialog('image');
+                }
+            },
+            width: 500,
+            title: "some title"
+        });
+        })
+</script>
