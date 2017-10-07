@@ -1,0 +1,23 @@
+.accordion {
+    list-style-type: none;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding-left: 0;
+    margin: 30px auto;
+    width: 35%;
+}
+.accordion p {
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px 15px 10px;
+    cursor: pointer;
+}
+.fa-times {
+    font-size: 15px;
+    float: right;
+    color: #777777;
+}
+.fa-times:hover {
+    color: #252525;
+}
+
