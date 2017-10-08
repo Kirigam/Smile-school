@@ -1,10 +1,9 @@
 $(document).ready(function () {
-
-   $('#accordion').children("h3").accordion({
+    $('#accordion').children("h3").accordion({
        onClickBefore: function () {
-           var click = $(this).attr("clicked");
-           if(click == 1 ) {
-              $(this).next().show("fast")
+           var click = parseInt($(this).attr("clicked"));
+           if( click === 1 ) {
+              $(this).next().show("fast");
            } else {
               $('#accordion').children("div").each(function (){
                    $(this).hide("fast");
@@ -17,4 +16,10 @@ $(document).ready(function () {
           $(this).attr("clicked" , "1");
       }
    });
+
+/*   Game init*/
+
+   $("body").gameBtn().find(".play").on("click", function () {
+        $("body").gameBtn("onClick")
+   })
 });

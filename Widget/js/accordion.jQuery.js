@@ -50,11 +50,53 @@
          var element = this.element.next();
 
          element.addClass("collapsed");
-      },
-      _destroy : function () {
-          this.element.removeUniqueId( "#accordion" );
       }
-
    });
+
+    $.widget( "ui.gameBtn", {
+        options: {
+            elementStyle:{
+                "color" : "red",
+                "width" : "150px",
+                "height" : "50px",
+                "left" : "450px"
+            }
+        },
+
+      _create: function () {
+          this._button = $("<button>");
+          this._button.toggleClass("play");
+          this._button.text("Play game!");
+          this._button.css("position", "absolute");
+          this._button.width(this.options.elementStyle.width);
+          this._button.height(this.options.elementStyle.height);
+          this._button.css("background-color", this.options.elementStyle.color);
+          this._button.css("left", this.options.elementStyle.left);
+          $(this.element).append(this._button);
+      },
+
+      onClick: function () {
+          var block = $("#accordion").find("div");
+          var dialog = confirm("You want to play game?");
+          if (dialog === true) {
+              block.css({"display" : "none"});
+              alert("Please, select any block");
+              block.eq(Math.floor( Math.random() * 3 )).append('<img class="win" src="img/win.png">')
+                  .prev().toggleClass("win")
+          }
+
+            $(".win").one("click", function () {
+                setTimeout(function (){
+                    var reload = confirm("You win! Do you want reload this page?");
+                    if (reload === true) {
+                        location.reload(true)
+                    } else {
+                        $('#accordion').children("div").find("img").remove();
+                        $(this).removeClass("win")
+                    }
+                }, 1000);
+            })
+      }
+    })
 
 }(jQuery));
