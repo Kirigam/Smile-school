@@ -1,26 +1,20 @@
 (function ($) {
-    $.widget('ui.smAccardion', {
+    $.widget('ui.smAcc', {
         options: {
-
+            onClickBefore: null,
+            onClickAfter: null
         },
 
-        _create: function () {
-
+        _create: function() {
+            var element = this.element;
+            this._on(element, {
+                click: "onClick"
+            });
         },
 
-        _setOption: function () {
-
-        },
         onClick: function () {
-
+            this._trigger( "onClickBefore" );
+            this._trigger( "onClickAfter" );
         },
-
-        _refresh: function () {
-
-        },
-
-        destroy: function () {
-
-        }
     });
 }(jQuery));

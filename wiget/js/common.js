@@ -4,6 +4,7 @@ $(document).ready( function () {
         $(this).next().not(':visible').slideDown();
     });
     $('.fa-times').click(function () {
-            $(this).parents('li').remove();
+        $(this).parents('li').remove();
     });
+    $(accordion)
 });
