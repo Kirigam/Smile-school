@@ -92,9 +92,5 @@
          element.attr("data-level", i);
          element.find(".testWidget").attr("data-level", ++i);
       },
-      levelAccordion: function(){
-         
-      }
-
    });
 }(jQuery));
