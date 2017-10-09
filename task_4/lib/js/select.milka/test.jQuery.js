@@ -15,7 +15,8 @@
       _create: function() {
          var element = this.element;
          this.setGeneralClass();
-         this._on(element, {
+         this.levelAccordion();
+         this._on(element.find(".title")[0], {
             click: "onClick",
          });
          this._refresh();
@@ -45,19 +46,20 @@
       initAccordion: function(){
          var self = this,
          opened = $('.open'); 
-
          if (opened.length > 0) {
             opened.each(function(){
-               self.accordion($(this));
+               if (self.element.attr("data-level") <= $(this).attr("data-level")) {
+                  self.accordion($(this));
+               }
             });
          }
          self.accordion(self.element);
          self.element.addClass('open');
       },
       accordion: function(element){
-         var body = element.find('.body');
-         var height = parseInt($(element.find('.body div')).css("height"));
-         var nowHeight = parseInt(element.find('.body').css("height"));
+         var body = element.find('.body')[0];
+         var height = parseInt($(body).find('>div').css("height"));
+         var nowHeight = parseInt($(body).css("height"));
          var i = nowHeight,
          j = 5;
          var bool;
@@ -66,22 +68,32 @@
             j = -5;
          }
          var myFor = setInterval(function(){
-           body.css("height", i.toString() + "px");
+           $(body).css("height", i.toString() + "px");
             i += j;
             if (i > height - 5 && bool != false) {
                clearInterval(myFor);
-               body.css("height", "auto");
+               $(body).css("height", "auto");
             }
             if (i < 5) {
                clearInterval(myFor);
-               body.css("height", "0");
+               $(body).css("height", "0");
                element.removeClass('open');
            }
          }, 10);
       },
       setGeneralClass: function () {
-         var element = this.element;
+         var element = this.element,
+         i = 1,
+         level = parseInt(element.attr("data-level"));
+         if (level > 0) {
+            i = level;
+         }
          element.addClass("my-widget-test");
+         element.attr("data-level", i);
+         element.find(".testWidget").attr("data-level", ++i);
+      },
+      levelAccordion: function(){
+         
       }
 
    });
