@@ -24,6 +24,7 @@
       imgArray = $(this).find('img'),
       i = 0,
       backColor = hexToRGB(defaulSettings.background, defaulSettings.alpha);
+      // parse block for galary
       $(this).find('div').addClass("blockImg").find('img').addClass("galaryImg");
       html = $.parseHTML("<div class=\"galaryBackground\">\n <div class=\"bigImgBlock\">\n <div class=\"bigImg\">\n <img class=\"imgNow\" src=\"\">\n </div>\n </div>\n </div>\n");
       $("body").append(html);
@@ -31,8 +32,10 @@
         $(".galaryBackground").append($.parseHTML("<div class=\"galaryBut galaryPrev\"><div class=\"fa fa-caret-down fa-5x triangle\"></div></div>"));
         $(".galaryBackground").append($.parseHTML("<div class=\"galaryBut galaryNext\"><div class=\"fa fa-caret-down fa-5x triangle\"></div></div>"));
       }
+      // add color user
       $(".galaryBackground").css("background-color", backColor);
-      console.log($(".galaryBackground").css("background-color"));
+
+      // push all img in array and give dtata-index
       imgArray.each(function () {
         var self = this;
         $(this).attr("data-index", i);
@@ -44,16 +47,19 @@
         * add items to the DOM
         */
         return $(self).on('click', function () {
+          // open galary
           var bigImg = $('.galaryBackground').css("display", "block");
           $(".bigImg img").attr("src", this.src);
           /**
           * close galary
           */
+          // close on click escape
           $(window).on('keydown', function(e) {
             if (e.keyCode == 27) {
               $(".galaryBackground").css("display", "none");
             }
           });
+          // close on click outside block
           $(document).mouseup(function (e) {
             var img = $(".bigImgBlock");
             var button = $(".galaryBut");
@@ -93,11 +99,17 @@
               $(".bigImg img").attr("src", prev.src);
             }
           }
+
+
+          // autoplay
           if (defaulSettings.autoplay.bool == true) {
             var autoplay = setInterval(function(){
               nextPrev("next", true);
             }, defaulSettings.autoplay.interval);
           }
+
+
+          // click button
           $('.galaryBut').on('click', function(){
             var button = $(this).attr('class').split(' ')[1];
             if (button == "galaryNext") {
