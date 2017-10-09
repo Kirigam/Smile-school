@@ -7,7 +7,7 @@
     margin: 30px auto;
     width: 35%;
 }
-.accordion p {
+.accordion h3, .accordion p {
     border-bottom: 1px solid #ddd;
     padding: 0 10px 15px 10px;
     cursor: pointer;
@@ -20,4 +20,6 @@
 .fa-times:hover {
     color: #252525;
 }
-
+.notActive {
+    display: none;
+}
