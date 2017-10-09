@@ -23,6 +23,7 @@
          self.accordion(self.element);
          self.element.addClass('open');
       },
+      
       accordion: function(element){
          var body = element.find('.body')[0];
          var height = parseInt($(body).find('>div').css("height"));
