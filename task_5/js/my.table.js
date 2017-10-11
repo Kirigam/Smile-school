@@ -16,7 +16,7 @@ $.widget('smile.newTableSmile', $.smile.tableSmile, {
 			this.name = $($(button).parent().parent().find("td")[0]).text();
 
 			this.userAjax();
-			$("#dialog").dialog();
+			$("#dialog").dialog({ position: 'top' });
 		}
 		else{
 			$(element.target).parent().parent().remove();
@@ -72,8 +72,8 @@ $.widget('smile.newTableSmile', $.smile.tableSmile, {
      	this._super();
      	$(this.columnName).each(function(){
      		this["button"] = $.parseHTML(
-     			"<a href='#' class='tableButton delete'>delete</a>"+
-     			"<a href='#' class='tableButton view'>view</a>");
+     			"<a href='#' class='tableButton delete'>delete</a> "+
+     			"| <a href='#' class='tableButton view'>view</a>");
      	});
   	},
   	_init: function(){

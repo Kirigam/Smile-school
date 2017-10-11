@@ -1,3 +1,9 @@
 #dialog{
 	display: none;
 }
+table {
+    border: 4px double #333; 
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 7px 11px;
+}
