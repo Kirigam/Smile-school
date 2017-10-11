@@ -1,3 +1,6 @@
 $(document).ready(function () {
-	$('.tableSmile').tableSmile();
+	// $("#test").on("click", function(){
+	// 	$("#dialog").dialog();
+	// });
+	$('.tableSmile').newTableSmile();
 });

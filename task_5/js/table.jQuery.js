@@ -53,7 +53,7 @@
                $.each(row, function(key, value){
                   var tableTD = '';
                   if ($.inArray(key, self.allowedColumn) >= 0) {
-                     tableTD = $('<td>').text(value);
+                     tableTD = $('<td>').append(value);
                      tableTR.append(tableTD);
                   }
                });
