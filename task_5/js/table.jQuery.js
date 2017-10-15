@@ -44,6 +44,7 @@
        *
        * @private
        */
+       
       _refresh: function () {
          var element = this.element;
          var self = this;

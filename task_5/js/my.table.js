@@ -22,6 +22,7 @@ $.widget('smile.newTableSmile', $.smile.tableSmile, {
 			$(element.target).parent().parent().remove();
 		}
 	},
+	
 	setingDialog: function(userObject){
 		var html = "<ul>\n",
 		self = this;
@@ -36,6 +37,7 @@ $.widget('smile.newTableSmile', $.smile.tableSmile, {
 		html += "</ul>";
 		return html;
 	},
+
 	userAjax: function(){
 		var self = this;
         if (self.ajaxRequest.init.length) {
