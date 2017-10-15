@@ -62,11 +62,32 @@ $.widget('smile.newTableSmile', $.smile.tableSmile, {
         }
 	},
 	_refresh: function(){
-		this._super();
+		this._createRow();
+		this._createCol();
 		this._on($(".tableButton"), {
             click: "onClick",
         });
 
+	},
+	_createRow: function(){
+		var element = this.element;
+     	var self = this;
+     	if (this.columnName.length != 0) {
+        	$.each(this.columnName, function(key, row) {
+           		var tableTR = $('<tr>');
+            	element.find('tbody').append(self._createCol(self, row, tableTR));
+        	});
+     	}
+	},
+	_createCol: function(self, row, tableTR){
+		$.each(row, function(key, value){
+      		var tableTD = '';
+      		if ($.inArray(key, self.allowedColumn) >= 0) {
+         		tableTD = $('<td>').append(value);
+         		tableTR.append(tableTD);
+      		}
+   		});
+   		return tableTR;
 	},
 	onLoadAfter: function () {
      	this._super();
