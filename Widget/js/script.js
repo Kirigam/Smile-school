@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#accordion').children("h3").accordion({
+    $('#accordion').accordion({
        onClickBefore: function () {
            var click = parseInt($(this).attr("clicked"));
            if( click === 1 ) {

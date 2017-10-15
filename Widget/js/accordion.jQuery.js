@@ -1,6 +1,5 @@
 (function($) {
    $.widget( "ui.accordion", {
-
       options: {
          elementStyle:{
              "color" : "#777",
@@ -81,7 +80,7 @@
           if (dialog === true) {
               block.css({"display" : "none"});
               alert("Please, select any block");
-              block.eq(Math.floor( Math.random() * 3 )).append('<img class="win" src="img/win.png">')
+              block.eq(Math.floor( Math.random() * 3 )).append('<img src="img/win.png">')
                   .prev().toggleClass("win")
           }
 

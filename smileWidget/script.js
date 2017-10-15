@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 $.widget('smile.smileDialog',
     $.ui.dialog, {
         close: function () {
@@ -36,4 +35,4 @@ $('.smallBtn').button({
             title: "some title"
         });
     })
-})
+});
