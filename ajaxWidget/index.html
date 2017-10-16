@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8-LHn_g9VR-FLdIfVrwpaN47C5MvEBWI">
+    </script>
+    <script src="../libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../libs/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="js/table.jQuery.js"></script>
+    <script src="js/myTable.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<table class="tableSmile" data-ajax="https://jsonplaceholder.typicode.com/users">
+    <thead>
+    <tr>
+        <th data-column="name"></th>
+    </tr>
+    </thead>
+</table>
+<div id="dialog" title="Info:"><div id="map"></div>
+</body>
+</html>
