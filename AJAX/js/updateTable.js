@@ -9,7 +9,7 @@ $.widget('smile.updateTable', $.smile.tableSmile, {
         $(".dialogWindow").hide();
         return this._super();
     },
-/*addd buttons to dialog*/
+/*add buttons to dialog*/
     _refresh: function () {
         var view = "<button class='ajaxBtn view'>view</button>";
         var deleted = "<button class='ajaxBtn delete'>delete</button>";
@@ -51,7 +51,7 @@ $.widget('smile.updateTable', $.smile.tableSmile, {
                 cache: true,
                 success: function (data) {
                     var inf;
-
+                    var dialog = $(".dialogWindow");
                     if (typeof(data) == 'object') {
                         $.each(data, function(key, value){
                             inf = value;
@@ -61,9 +61,15 @@ $.widget('smile.updateTable', $.smile.tableSmile, {
                                 }
                             })
                         });
-                        $(".dialogWindow").empty();
-                        $(".dialogWindow").dialog();
-                        $(".dialogWindow").append($.parseHTML(self.dialogSettings(self.dialogContent)));
+                        dialog.empty();
+                        dialog.dialog({
+                            show:
+                                {
+                                    effect: "blind", duration: 200
+                                },
+                            width: 700
+                        }).css(self.options.style.dialog);
+                        dialog.append($.parseHTML(self.dialogSettings(self.dialogContent)));
                     }
                 }
             });
@@ -72,13 +78,3 @@ $.widget('smile.updateTable', $.smile.tableSmile, {
         }
     }
     });
-
-
-
-
-
-
-$(document).ready(function() {
- $(".tableSmile").updateTable({
- })
-});
