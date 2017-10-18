@@ -1,3 +1,4 @@
+require(["jquery", "uiJquery"], function(jquery) {
 (function($) {
    $.widget( "smile.tableSmile", {
       defaultClass: 'smile-table-widget',
@@ -117,3 +118,4 @@
       }
    });
 }(jQuery));
+});

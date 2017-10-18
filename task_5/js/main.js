@@ -1,6 +1,7 @@
-$(document).ready(function () {
-	// $("#test").on("click", function(){
-	// 	$("#dialog").dialog();
-	// });
-	$('.tableSmile').newTableSmile();
+require([ "table.jQuery", "my.table", "jquery", "uiJquery"], function(jquery) {
+  	$(document).ready(function () {
+		$('.tableSmile').newTableSmile();
+	});
 });
+  	
+
