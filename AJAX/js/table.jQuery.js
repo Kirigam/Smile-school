@@ -35,7 +35,6 @@
          var element = this.element;
          this._trigger( "onLoadBefore" );
          this.ajaxRequest.init = element.data('ajax').length ? element.data('ajax') : '';
-         this.dataAddress = element.data('column');
          this.callToAjax();
          this._trigger( "onLoadAfter" );
       },
@@ -55,25 +54,13 @@
 
                $.each(row, function(key, value){
                   var tableTD = '';
-                  var val = value;
-                  var detail = '<span class="detail">' + Object.entries(val)+ '</span>';
                   if ($.inArray(key, self.allowedColumn) >= 0) {
-                     if (typeof(val) == "object") {
-                         tableTD = $('<td>').text(key).hover(function() {
-                                $(this).append(detail)
-                         }, function() {
-                             $(this).find(".detail").remove()
-                         })
-                     } else {
-                         tableTD = $('<td>').text(value);
-                     }
+                     tableTD = $('<td>').text(value);
                      tableTR.append(tableTD);
                   }
                });
                element.find('tbody').append(tableTR);
             });
-
-
          }
 
       },
@@ -88,7 +75,7 @@
             $.ajax({
                url: self.ajaxRequest.init,
                method: 'GET',
-               cache: true,
+               cache: false,
                success: function (data) {
                   if (typeof(data) == 'object') {
                      self.ajaxRequest.response = data;
@@ -113,7 +100,7 @@
          var element = this.element;
          element.addClass(this.defaultClass);
          element.append('<tbody>');
-
+         
          $.each(element.find('th'), function (key, elementTh) {
             self.allowedColumn.push($(elementTh).data('column'));
          });

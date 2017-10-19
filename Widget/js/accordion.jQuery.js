@@ -12,11 +12,11 @@
       },
 
       _create: function() {
-         var element = this.element;
+         var element = this.element.children("h3");
 
          this.setGeneralClass();
 
-         this._on(element, {
+          this.element.children("h3")._on(element, {
             click: "onClick"
          });
 
