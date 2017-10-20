@@ -1,7 +1,10 @@
-require([ "table.jQuery", "my.table", "jquery", "uiJquery"], function(jquery) {
-  	$(document).ready(function () {
+require([
+	'jquery', 
+	'uiJquery', 
+	'smileTable', 
+	'my.table'
+],	function($) {
+  	$(function () {
 		$('.tableSmile').newTableSmile();
 	});
 });
-  	
-

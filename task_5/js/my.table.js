@@ -1,4 +1,8 @@
-require(["table.jQuery", "jquery", "uiJquery"], function(jquery) {
+define([
+		"jquery", 
+		"uiJquery"
+	],
+	function($) {
 	$.widget('smile.newTableSmile', $.smile.tableSmile, {
 		name: {},
 		allUsers: [],
@@ -65,6 +69,7 @@ require(["table.jQuery", "jquery", "uiJquery"], function(jquery) {
 	        }
 		},
 		_refresh: function(){
+			console.log("fuck");
 			this._createRow();
 			this._createCol();
 			this._on($(".tableButton"), {

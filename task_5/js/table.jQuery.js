@@ -1,5 +1,7 @@
-require(["jquery", "uiJquery"], function(jquery) {
-(function($) {
+define([
+    "jquery", 
+    "uiJquery"
+  ],function($) {
    $.widget( "smile.tableSmile", {
       defaultClass: 'smile-table-widget',
       columnName: [],
@@ -117,5 +119,4 @@ require(["jquery", "uiJquery"], function(jquery) {
          });
       }
    });
-}(jQuery));
 });
