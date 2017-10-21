@@ -4,27 +4,23 @@ define([
 	],
 	function($) {
 	$.widget('smile.newTableSmile', $.smile.tableSmile, {
-		name: {},
 		allUsers: [],
-		infUser: {},
 		url: '',
-		column: '',
+		id: '',
 		_create: function() {
 			$("body").append($.parseHTML("<div id='dialog' title='Information from user'></div>"));
 	     	return this._super();
 	  	},
 		onClick: function(element){
 			var button = element.target;
+			var parent = $(button).parent().parent();
 			if($(button).attr("class").split(' ')[1] == "view"){
-
-				this.column = $($(this.element).find("th")[0]).data("column");
-				this.name = $($(button).parent().parent().find("td")[0]).text();
-
+				this.id = $(parent).attr("id");
 				this.userAjax();
 				$("#dialog").dialog({ position: 'top' });
 			}
 			else{
-				$(element.target).parent().parent().remove();
+				$(parent).remove();
 			}
 		},
 		
@@ -47,22 +43,13 @@ define([
 			var self = this;
 	        if (self.ajaxRequest.init.length) {
 	            $.ajax({
-	                url: self.ajaxRequest.init,
+	                url: self.ajaxRequest.init + "/" + self.id,
 	                method: 'GET',
 	                cache: true,
 	                success: function (data) {
-	                	var inf;
 	                	if (typeof(data) == 'object') {
-							$.each(data, function(key, value){
-								inf = value;
-								$.each(value, function(key, value){
-									if(self.column == key && self.name == value){
-										self.infUser = inf;
-									}
-								})
-							});   
 							$("#dialog").empty();
-							$("#dialog").append($.parseHTML(self.setingDialog(self.infUser)));             	    
+							$("#dialog").append($.parseHTML(self.setingDialog(data)));             	    
 	                	}
 	                }
 	            });
@@ -82,7 +69,7 @@ define([
 	     	var self = this;
 	     	if (this.columnName.length != 0) {
 	        	$.each(this.columnName, function(key, row) {
-	           		var tableTR = $('<tr>');
+	           		var tableTR = $('<tr>').attr("id", row.id);
 	            	element.find('tbody').append(self._createCol(self, row, tableTR));
 	        	});
 	     	}
