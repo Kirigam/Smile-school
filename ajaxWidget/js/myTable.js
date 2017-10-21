@@ -61,8 +61,9 @@ $.widget('smile.myTable', $.smile.tableSmile , {
                     $.each(value, function (key, value) {
                         if(typeof(value)  == "object") {
                             self.initMap(value);
+                        } else {
+                            ul += "<li>" + key + ": " + value + "</li>\n";
                         }
-                        ul += "<li>" + key + ": " + value + "</li>\n";
                     });
 
                     ul += "</ul>\n";
