@@ -5,12 +5,9 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/table.jQuery.js"></script>
-    <script src="js/updateTable.js"></script>
-    <script src="js/tooltip.widget.js"></script>
-    <script src="js/widget.init.js"></script>
+    <script type="application/javascript" src="lib/require.js"></script>
+    <script type="application/javascript" src="js/requirejs-config.js"></script>
+    <script data-main="scripts/main" src="js/init.js"></script>
 </head>
 <body>
 <table class="tableSmile" data-ajax="https://jsonplaceholder.typicode.com/users">

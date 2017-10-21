@@ -1,4 +1,7 @@
-(function($) {
+define([
+    'jquery',
+    'jqueryUI'
+],function($) {
    $.widget( "smile.tableSmile", {
       defaultClass: 'smile-table-widget',
       columnName: [],
@@ -118,4 +121,4 @@
          });
       }
    });
-}(jQuery));
+});
