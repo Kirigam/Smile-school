@@ -24,11 +24,12 @@ define([
          * @private
          */
         _refresh: function () {
-            var self = this;
-            var view = "<button class='ajaxBtn view'>view</button>";
-            var deleted = "<button class='ajaxBtn delete'>delete</button>";
+            var self = this,
+                view = "<button class='ajaxBtn view'>view</button>",
+                deleted = "<button class='ajaxBtn delete'>delete</button>";
 
             self.addDataToColls();
+            self.addUserIdToRows();
 
             $("tbody").find("tr").append(view + deleted);
             this._on($(".ajaxBtn"), {
@@ -36,12 +37,22 @@ define([
             });
         },
 
+        addUserIdToRows: function () {
+            var tableRow = $("tbody").find("tr"),
+                tableRowLength = tableRow.length;
+
+            tableRow.each(function() {
+                for (i = 1, a = 0 ; a < tableRowLength; i++, a++) {
+                    tableRow.eq(a).attr("userID", i)
+                }
+            });
+        },
+
         addDataToColls: function () {
+            var element = this.element,
+                self = this;
 
-            var element = this.element;
-            var self = this;
             if (this.columnName.length != 0) {
-
                 $.each(this.columnName, function(key, row) {
                     var tableTR = $('<tr>');
 
@@ -70,6 +81,7 @@ define([
         dialogSettings: function(userData){
             var html = "<ul>\n",
                 self = this;
+
             $.each(userData, function(key, value){
                 if (typeof value == "object") {
                     html += "<li class='generalItem'>" + key + ": " + self.dialogSettings(value) + "</li>\n";
@@ -88,10 +100,10 @@ define([
          * @param element
          */
         onClick: function(element){
-            var button = element.target;
-            var self = this;
+            var button = element.target,
+                self = this;
 
-            self.userID = $(button).parent().index() + 1;
+            self.userID = $(button).parent().attr("userID");
             self.userDetailLink = self.ajaxRequest.init + "/" + self.userID;
 
             if ($(button).hasClass("view")) {
@@ -106,6 +118,7 @@ define([
          */
         showInfAboutUser: function () {
             var self = this;
+
             $.ajax({
                 url: self.userDetailLink,
                 method: 'GET',
@@ -120,8 +133,8 @@ define([
          * dialog animation settings
          */
         dialogAnimation: function () {
-            var self = this;
-            var dialog = $(".dialogWindow");
+            var self = this,
+                dialog = $(".dialogWindow");
 
             dialog.empty();
             dialog.dialog({
@@ -131,6 +144,7 @@ define([
                     },
                 width: 700
             }).css(self.options.style.dialog);
+
             dialog.append($.parseHTML(self.dialogSettings(self.dialogContent)));
         }
     })

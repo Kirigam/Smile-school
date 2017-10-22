@@ -11,8 +11,8 @@ define([
         items: "[title], [data-html]",
 
         content: function () {
-            var element = $(this);
-            var self = this;
+            var element = $(this),
+                self = this;
 
             if (element.is("[data-html]")) {
                 return self.please()
