@@ -3,9 +3,9 @@ define([
     'jqueryUI'
 ],function($) {
     $.widget('smile.updateTable', $.smile.tableSmile, {
-        name: {},
-        column: "",
+        userID: null,
         dialogContent: {},
+        userDetailLink: "",
 
         /**
          * add dialog window to body
@@ -91,10 +91,10 @@ define([
             var button = element.target;
             var self = this;
 
-            if ($(button).hasClass("view")) {
+            self.userID = $(button).parent().index() + 1;
+            self.userDetailLink = self.ajaxRequest.init + "/" + self.userID;
 
-                this.column = $(".tableSmile").find("th").data("column");
-                this.name = $(button).siblings("td").first().text();
+            if ($(button).hasClass("view")) {
 
                 self.showInfAboutUser()
             } else {
@@ -107,23 +107,13 @@ define([
         showInfAboutUser: function () {
             var self = this;
             $.ajax({
-                url: self.ajaxRequest.init,
+                url: self.userDetailLink,
                 method: 'GET',
-                cache: true,
+                cache: false,
                 success: function (data) {
-                    var inf;
-                    if (typeof(data) == 'object') {
-                        $.each(data, function(key, value){
-                            inf = value;
-                            $.each(value, function(key, value){
-                                if(self.column == key && self.name == value){
-                                    self.dialogContent = inf;
-                                }
-                            })
-                        });
+                    self.dialogContent = data;
                         self.dialogAnimation()
                     }
-                }
             });
         },
         /**

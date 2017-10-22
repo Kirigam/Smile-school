@@ -4,19 +4,23 @@ define([
 ], function($) {
     $.widget('smile.myTooltip', $.ui.tooltip, {
 
-        items: "[title], [data-html]",
-
         _create: function () {
             return this._super();
         },
 
+        items: "[title], [data-html]",
+
         content: function () {
             var element = $(this);
+            var self = this;
 
             if (element.is("[data-html]")) {
-                return "dfjdlfkldhfkjd"
+                return self.please()
             }
+        },
 
+        please: function () {
+            return "some text"
         }
     })
 });
