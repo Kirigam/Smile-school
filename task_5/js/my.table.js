@@ -56,7 +56,6 @@ define([
 	        }
 		},
 		_refresh: function(){
-			console.log("fuck");
 			this._createRow();
 			this._createCol();
 			this._on($(".tableButton"), {
