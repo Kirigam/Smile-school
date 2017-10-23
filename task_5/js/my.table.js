@@ -75,9 +75,7 @@ define([
 	        	});
 	     	}
 		},
-		
 
-		
 		_createCol: function(self, row, tableTR){
 			$.each(row, function(key, value){
 	      		var tableTD = '';
