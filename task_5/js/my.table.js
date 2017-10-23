@@ -10,7 +10,8 @@ define([
 		_create: function() {
 			$("body").append($.parseHTML("<div id='dialog' title='Information from user'></div>"));
 	     	return this._super();
-	  	},
+	    },
+
 		onClick: function(element){
 			var button = element.target;
 			var parent = $(button).parent().parent();
@@ -55,14 +56,15 @@ define([
 	            });
 	        }
 		},
+		
 		_refresh: function(){
 			this._createRow();
-			this._createCol();
 			this._on($(".tableButton"), {
 	            click: "onClick",
 	        });
 
 		},
+		
 		_createRow: function(){
 			var element = this.element;
 	     	var self = this;
@@ -73,6 +75,7 @@ define([
 	        	});
 	     	}
 		},
+		
 		_createCol: function(self, row, tableTR){
 			$.each(row, function(key, value){
 	      		var tableTD = '';
@@ -83,6 +86,7 @@ define([
 	   		});
 	   		return tableTR;
 		},
+		
 		onLoadAfter: function () {
 	     	this._super();
 	     	$(this.columnName).each(function(){
@@ -91,6 +95,7 @@ define([
 	     			"| <a href='#' class='tableButton view'>view</a>");
 	     	});
 	  	},
+	  	
 	  	_init: function(){
 	  		this._super();
 	  		this.allowedColumn.push("button");
