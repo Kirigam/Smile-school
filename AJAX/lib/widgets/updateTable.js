@@ -1,6 +1,7 @@
 define([
     'jquery',
-    'jqueryUI'
+    'jqueryUI',
+    'updateTable'
 ],function($) {
     $.widget('smile.updateTable', $.smile.tableSmile, {
         userID: null,
@@ -36,7 +37,9 @@ define([
                 click: "onClick"
             });
         },
-
+        /**
+         * the function add to each rows atrribute "userID
+         */
         addUserIdToRows: function () {
             var tableRow = $("tbody").find("tr"),
                 tableRowLength = tableRow.length;
@@ -47,7 +50,9 @@ define([
                 }
             });
         },
-
+        /**
+         * add to address <td> tooltip attribute "data-html"
+         */
         addDataToColls: function () {
             var element = this.element,
                 self = this;
@@ -125,7 +130,7 @@ define([
                 cache: false,
                 success: function (data) {
                     self.dialogContent = data;
-                        self.dialogAnimation()
+                    self.dialogAnimation()
                     }
             });
         },

@@ -3,11 +3,6 @@ define([
     'jqueryUI'
 ], function($) {
     $.widget('smile.myTooltip', $.ui.tooltip, {
-
-        _create: function () {
-            return this._super();
-        },
-
         items: "[title], [data-html]",
 
         content: function () {
@@ -15,7 +10,7 @@ define([
                 self = this;
 
             if (element.is("[data-html]")) {
-                return self.please()
+                return this.please
             }
         },
 
