@@ -25,7 +25,20 @@ $(document).ready(function() {
     next.text("»");
     prev.text("«");
     navbar(50);
+    // initGalary();
+    
 });
+function initGalary() {
+    $('.galaryCon').smile({
+        button: true,
+        background: "ff68d8",
+        alpha: 0.6,
+        autoplay: {
+            bool: true,
+            interval: 1000
+        },
+    });
+}
 function navbar(n = 25){
     var next = $(".owl-next");
     var prev = $(".owl-prev");
